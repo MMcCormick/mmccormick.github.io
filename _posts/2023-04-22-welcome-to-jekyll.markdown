@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Matt McCormick's Professional Blog!"
+title:  "An Introduction"
 date:   2023-04-22 23:08:00 -0400
 categories: introduction AI web-development
 ---
