@@ -18,7 +18,8 @@
     ],
     "experience": [
       {
-        "position": "AI & Web Development Consultant (Self-Employed)",
+        "position": "AI & Web Development Consultant",
+        "company": "Self-Employed",
         "location": "New York, NY",
         "start_date": "January 2021",
         "end_date": "Present"
@@ -31,7 +32,8 @@
         "end_date": "January 2021"
       },
       {
-          "position": "Full Stack Web Consultant (Self-Employed)",
+          "position": "Full Stack Web Consultant",
+          "company": "Self-Employed",
           "location": "Los Angeles, CA",
           "start_date": "January 2014",
           "end_date": "February 2018"
