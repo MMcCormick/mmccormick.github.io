@@ -33,6 +33,12 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-data
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-remote-theme
+  - jekyll-mentions
+  - jemoji
 
 # Google Analytics
 # mmccormick.github.io:
