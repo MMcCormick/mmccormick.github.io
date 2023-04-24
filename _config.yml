@@ -18,10 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Matt McCormick - AI & Web Developer
+title: Matt McCormick - Advanced AI & Web Expertise
 email: info@mattcmccormick.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Matt McCormick: Expert AI & Full-Stack Web Developer, specializing in LLM Web layers & startup growth. Discover his innovative projects & insights on AI solutions and web development.
+  Matt McCormick: Expert AI & Full-Stack Web Developer, specializing in AI-powered web interfaces & startup growth. Discover his innovative projects & insights on AI & web app solutions.
 baseurl: "" # the subpath of your site, e.g. /blog
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://mmccormick.github.io" # the base hostname & protocol for your site, e.g. http://example.com
@@ -31,7 +31,7 @@ github_username:  mmccormick
 
 # Build settings
 theme: minima
-# remote_theme: pages-themes/midnight@v0.2.0
+
 plugins:
   - jekyll-feed
   - jekyll-data
@@ -47,6 +47,8 @@ plugins:
 # google_analytics: G-F5WTVK9VVQ
 # mattcmccormick.com:
 google_analytics: G-JQ232L7CYC
+
+contact_email: contact@mattcmccormick.com
 
 # Exclude from processing.
 # The following items will not be processed, by default.
