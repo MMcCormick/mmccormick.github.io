@@ -5,7 +5,7 @@ date:   2023-04-22 23:08:00 -0400
 categories: introduction AI web-development
 ---
 
-My name is Matt McCormick, and I am an AI and Full-stack Web Developer with a passion for innovation, creativity, and technology. Throughout my career, I have gained extensive experience in AI, web development, and consulting, specializing in providing comprehensive solutions and leveraging my expertise to drive success in the tech industry.
+My name is Matt McCormick, and I am an AI and Full-stack Web Developer with a passion for innovation, creativity, and technology. Throughout my career, I have gained extensive experience in AI, industry-standard web technologies, and consulting, specializing in providing comprehensive solutions and leveraging my expertise to drive success in the tech industry.
 
 I am a creative, pioneering individual with a track record of success in various positions such as Senior Back-End Software Engineer, Full Stack Web Consultant, and CTO. My education includes a B.A. Degree in Computer Science & Music from Tufts, and I have over 15 years of web development experience.
 
