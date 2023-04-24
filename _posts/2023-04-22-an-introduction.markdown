@@ -7,50 +7,53 @@ categories: introduction AI web-development
 
 My name is Matt McCormick, and I am an AI and Full-stack Web Developer with a passion for innovation, creativity, and technology. Throughout my career, I have gained extensive experience in AI, industry-standard web technologies, and consulting, specializing in providing comprehensive solutions and leveraging my expertise to drive success in the tech industry.
 
-I am a creative, pioneering individual with a track record of success in various positions such as Senior Back-End Software Engineer, Full Stack Web Consultant, and CTO. My education includes a B.A. Degree in Computer Science & Music from Tufts, and I have over 15 years of web development experience.
+Here's a sample of a single-shot interpreter I wrote recently which can affordably compare arbitrary text strings, allowing for semantic-meaning-based search and estimated required action:
+
+```python
+def similarity(v1, v2):
+  # based upon https://stackoverflow.com/questions/18424228/cosine-similarity-between-2-number-lists
+  return numpy.dot(v1, v2)/(numpy.linalg.norm(v1)*numpy.linalg.norm(v2))  # return cosine similarity
+
+def get_embedding(content, engine='text-embedding-ada-002'):
+  content = content.encode(encoding='ASCII',errors='ignore').decode()
+  response = openai.Embedding.create(input=content,engine=engine)
+  vector = response['data'][0]['embedding']  # this is a normal list
+  return vector
+
+# Return the required action and relevant entities
+def interpret(input_and_context, save_path=None, training_mode=False):
+  vector = get_embedding(input_and_context)
+  required_action = estimate_required_action(vector)
+  relevant_entities = get_relevant_entities(vector, save_path)
+  if training_mode == True:
+    required_action = optionally_correct(required_action)
+    optionally_save_example(input_and_context, vector, required_action)
+  return required_action, relevant_entities
+
+def estimate_required_action(vector):
+  all_examples = load_all_json('examples')
+  # Organize the examples by required action
+  organized_examples = {}
+  for example in all_examples:
+    required_action = example['required_action']
+    organized_examples.setdefault(required_action, []).append(example)
+  selected_action = None
+  selected_similarity = 0
+  # Compare the passed vector with the mean vector of each required action
+  for action, examples in organized_examples.items():
+    mean = numpy.mean([d['vector'] for d in examples], axis=0)
+    action_similarity = similarity(vector, mean)
+    logging.debug(action + str(action_similarity))
+    if action_similarity > selected_similarity:
+      selected_similarity = action_similarity
+      selected_action = action
+  return selected_action
+```
+
+I am a creative, pioneering individual with a track record of success in various positions such as Senior Back-End Software Engineer, Full Stack Web Consultant, and CTO. My education includes a B.A. Degree in Computer Science & Music from [Tufts](https://www.tufts.edu/), and I have over 15 years of web development experience. For more details on my experience, please head to [about](/about)
 
 In addition to my professional accomplishments, I am passionate about improvisation, interactive storytelling, procedural generation, emergent narrative, game design, and performance.
 
-This site is primarily a central hub for my web presence, and will also contain insights on AI, web development, and other related topics. Stay tuned for updates on my latest projects. Thank you for joining me on this journey, and I look forward to sharing my knowledge and expertise with you!
+This site is a central hub for my web presence, and will also contain insights on AI, web development, and other related topics. Stay tuned for updates on my latest projects. Thank you for joining me on this journey, and I look forward to sharing my knowledge and expertise with you!
 
-For any inquiries, please feel free to reach out through the contact form on my website.
-
-```python
-import os
-import openai
-import datetime
-
-openai.api_key = os.getenv("OPENAI_API_KEY")
-
-def request(messages, settings):
-    response = get_chat_response(messages, settings)
-    log_response(messages, response)
-    return response
-
-def get_chat_response(messages, settings):
-    response = openai.ChatCompletion.create(
-        model=settings.get('model', 'gpt-3.5-turbo'),
-        messages=messages,
-        temperature=settings.get('temperature', 0.1),
-        max_tokens=settings.get('max_tokens', 200),
-        top_p=settings.get('top_p', 1),
-        frequency_penalty=settings.get('frequency_penalty', 0),
-        presence_penalty=settings.get('presence_penalty', 0),
-        stop=settings.get('stop', ["\"\"\""])
-    )
-    return response['choices'][0]['message']['content']
-
-def log_response(messages, response):
-    log_file = "logs/api.log"
-    os.makedirs(os.path.dirname(log_file), exist_ok=True)
-
-    with open(log_file, "a") as f:
-        f.write("\n\n" + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "\n")
-        for message in messages:
-            role, content = list(message.items())[0]
-            f.write(f"{role.capitalize()}: {content}\n")
-        f.write("Response: " + response + "\n")
-
-```
-
-```You find yourself in a dimly lit spaceport bar, surrounded by the rough and tumble patrons of The Rusty Star. As you sit at the bar, nursing a drink and keeping an eye out for any potential leads on your mission, you can't help but feel like you don't quite belong here. Your sleek cybernetic enhancements and tailored suit stand out amongst the grime and grit of the other patrons.```
+For any inquiries, please feel free to reach out through the [contact page](/contact) on my website. You can also find me on [LinkedIn](https://www.linkedin.com/in/your-linkedin-profile), [GitHub](https://github.com/your-github-username), and [Twitter](https://twitter.com/your-twitter-handle).
