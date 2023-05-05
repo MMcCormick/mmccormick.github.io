@@ -6,9 +6,7 @@ permalink: /about/
 
 ## About Matt McCormick
 
-Matt McCormick is a creative developer with a passion for AI technology and over 15 years of experience in software. If you need a complex web application for your MVP, he's made about 100 of those. He's also very passionate about the intersection of AI language models and human storytelling.
-
-Matt has been the driving force behind numerous innovative projects that showcase his expertise in AI solutions and web development.
+Matt McCormick is a creative developer with a passion for AI technology, and over 15 years of experience in software. If you need a complex web application for your MVP, he's made about 100 of those. Matt has also worked on at-scale applications passing millions of messages per day. He's extremely passionate about the intersection of AI language models and human storytelling.
 
 ### Core Skills
 <p>
