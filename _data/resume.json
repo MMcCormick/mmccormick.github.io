@@ -2,123 +2,147 @@
   "name": "Matt McCormick",
   "title": "AI & Full-stack Web Developer | Startup Veteran | Passionate about AI",
   "core_skills": [
-    "Artificial Intelligence",
-    "Machine Learning",
-    "Python",
-    "OpenAI",
-    "Natural Language Processing",
-    "Full-Stack Web Development",
-    "Ruby on Rails",
-    "JavaScript / jQuery / Coffeescript",
-    "HTML5 / HAML / SLIM",
-    "CSS / SASS",
-    "API Development",
-    "PostgreSQL / MySQL / ActiveRecord",
-    "MongoDB / Mongoid",
-    "Project Management",
-    "Team Leadership"
-  ],
+	"Artificial Intelligence",
+	"Machine Learning",
+	"Python",
+	"OpenAI",
+	"Natural Language Processing",
+	"Full-Stack Web Development",
+	"Ruby on Rails",
+	"JavaScript / jQuery / Coffeescript",
+	"HTML5 / HAML / SLIM",
+	"CSS / SASS",
+	"API Development",
+	"PostgreSQL / MySQL / ActiveRecord",
+	"MongoDB / Mongoid",
+	"Project Management",
+	"Team Leadership",
+	"Docker",
+	"Dev Containers",
+	"Linux / Mac / Windows",
+	"Source Code Management",
+	"Documentation",
+	"npm",
+	"Automation (workflow, data)",
+	"Chat Interfaces",
+	"VSCode, Sublime Text",
+	"nano",
+	"Complex Web Applications"
+  ],  
   "experience": [
-    {
-      "position": "AI & Web Development Consultant",
-      "company": "Self-Employed",
-      "location": "New York, NY",
-      "start_date": "January 2021",
-      "end_date": "Present"
-    },
-    {
-      "position": "Acting CTO",
-      "company": "One Click Politics",
-      "location": "New York, NY",
-      "start_date": "June 2020",
-      "end_date": "January 2021",
-      "description": [
-        "Led hiring during COVID-19, overseeing a seamless back-end team transition.",
-        "Prioritized major client accounts and directed resource allocation in line with board requirements.",
-        "Managed a team of back-end developers and coordinated with the front-end development team.",
-        "Restored the board's confidence in the technical leadership and became the primary point of contact for critical technical matters.",
-        "Became the primary point of contact for critical technical matters, restoring the board's confidence in technical leadership."
-      ]
-    },
-    {
-      "position": "Senior Back-End Software Engineer",
-      "company": "One Click Politics",
-      "location": "New York, NY",
-      "start_date": "February 2018",
-      "end_date": "June 2020",
-      "description": [
-        "Developed major features such as Video Messaging and Legislator Search.",
-        "Integrated three APIs for CRM metadata synchronization.",
-        "Maintained the existing RabbitMQ messaging system (200,000+ requests per day).",
-        "Performed ongoing data imports, code review, and bug fixes."
-      ]
-    },
-    {
-      "position": "Full Stack Web Consultant",
-      "company": "Self-Employed",
-      "location": "Los Angeles, CA",
-      "start_date": "January 2014",
-      "end_date": "February 2018",
-      "description": [
-        "Worked with many companies on a contract basis, including NinjaThat, FolioHD, Philosophie LLC, Laurel & Wolf, and Betterific.",
-        "The screenshots represent a project for FolioHD, which allowed users to create their own custom links and WYSIWYG pages."
-      ]
-    },
-    {
-      "position": "CTO / Web Developer",
-      "company": "Swink.tv",
-      "location": "Los Angeles, CA",
-      "start_date": "June 2013",
-      "end_date": "January 2014",
-      "description": [
-        "Swink.tv is a browser-based video platform that allows parents and athletes to save, search and share their favorite youth sports memories.",
-        "Revamped user-facing front end of the pre-existing Swink.tv.",
-        "After working for months with unnecessarily complex legacy code, decided along with the CTO to rebuild a simplified product from the ground up.",
-        "Created a Rails API which could be consumed by an Ember.js front end."
-      ]
-    },
-    {
-      "position": "Co-Founder",
-      "company": "Spruceling",
-      "location": "Philadelphia, PA",
-      "start_date": "September 2012",
-      "end_date": "February 2013",
-      "description": [
-        "Spruceling was a children’s clothing company formed at DreamIt Startup Accelerator in Philadelphia by the same team that created The Whoot.",
-        "As a technical co-founder, collaborated to create the Spruceling site, which matched donors and recipients.",
-        "This involved full stack Rails development, data management (PostgreSQL), design of the user interface, and interfacing with the Stamps.com API."
-      ]
-    }      
+	{
+		"position": "SWE",
+		"company": "Stealth",
+		"location":"New York, NY",
+		"start_date": "December 2023",
+		"end_date": "Present",
+		"description":[
+			"Exciting project combining custom chat agents with structured private data and vector databases"
+		]
+	},
+	{
+	  "position": "AI & Web Development Consultant",
+	  "company": "Self-Employed",
+	  "location": "New York, NY",
+	  "start_date": "January 2021",
+	  "end_date": "December 2023",
+	  "description": [
+		"Various projects involving AI, Machine Learning, Python, and chat interfaces",
+		"Utilized Docker for creating, deploying, and running applications across different platforms."
+	  ]	  
+	},
+	{
+	  "position": "Acting CTO",
+	  "company": "One Click Politics",
+	  "location": "New York, NY",
+	  "start_date": "June 2020",
+	  "end_date": "January 2021",
+	  "description": [
+		"Led hiring during COVID-19, overseeing a seamless back-end team transition.",
+		"Prioritized major client accounts and directed resource allocation in line with board requirements.",
+		"Managed a team of back-end developers and coordinated with the front-end development team.",
+		"Restored the board's confidence in the technical leadership and became the primary point of contact for critical technical matters.",
+		"Became the primary point of contact for critical technical matters, restoring the board's confidence in technical leadership."
+	  ]
+	},
+	{
+	  "position": "Senior Back-End Software Engineer",
+	  "company": "One Click Politics",
+	  "location": "New York, NY",
+	  "start_date": "February 2018",
+	  "end_date": "June 2020",
+	  "description": [
+		"Developed major features such as Video Messaging and Legislator Search.",
+		"Integrated three APIs for CRM metadata synchronization.",
+		"Maintained the existing RabbitMQ messaging system (200,000+ requests per day).",
+		"Performed ongoing data imports, code review, and bug fixes."
+	  ]
+	},
+	{
+	  "position": "Full Stack Web Consultant",
+	  "company": "Self-Employed",
+	  "location": "Los Angeles, CA",
+	  "start_date": "January 2014",
+	  "end_date": "February 2018",
+	  "description": [
+		"Worked with many companies on a contract basis, including NinjaThat, FolioHD, Philosophie LLC, Laurel & Wolf, and Betterific."
+	  ]
+	},
+	{
+	  "position": "CTO / Web Developer",
+	  "company": "Swink.tv",
+	  "location": "Los Angeles, CA",
+	  "start_date": "June 2013",
+	  "end_date": "January 2014",
+	  "description": [
+		"Swink.tv is a browser-based video platform that allows parents and athletes to save, search and share their favorite youth sports memories.",
+		"Revamped user-facing front end of the pre-existing Swink.tv.",
+		"After working for months with unnecessarily complex legacy code, decided along with the CTO to rebuild a simplified product from the ground up.",
+		"Created a Rails API which could be consumed by an Ember.js front end."
+	  ]
+	},
+	{
+	  "position": "Co-Founder",
+	  "company": "Spruceling",
+	  "location": "Philadelphia, PA",
+	  "start_date": "September 2012",
+	  "end_date": "February 2013",
+	  "description": [
+		"Spruceling was a children’s clothing company formed at DreamIt Startup Accelerator in Philadelphia by the same team that created The Whoot.",
+		"As a technical co-founder, collaborated to create the Spruceling site, which matched donors and recipients.",
+		"This involved full stack Rails development, data management (PostgreSQL), design of the user interface, and interfacing with the Stamps.com API."
+	  ]
+	}      
   ],
   "education": [
-    {
-      "degree": "B.A. Degree",
-      "major": "Computer Science & Music",
-      "institution": "Tufts University",
-      "location": "Medford, MA",
-      "graduation_date": "May 2010",
-      "gpa": "3.75"
-    },
-    {
-      "program": "Semester Abroad",
-      "institution": "University of Limerick, Ireland",
-      "location": "Limerick, Ireland",
-      "date": "Spring 2009"
-    },
-    {
-      "degree": "High School Diploma",
-      "institution": "Mohawk Trail Regional High School",
-      "location": "Buckland, MA",
-      "graduation_date": "May 2006"
-    }
+	{
+	  "degree": "B.A. Degree",
+	  "major": "Computer Science & Music",
+	  "institution": "Tufts University",
+	  "location": "Medford, MA",
+	  "graduation_date": "May 2010",
+	  "gpa": "3.75"
+	},
+	{
+	  "program": "Semester Abroad",
+	  "institution": "University of Limerick, Ireland",
+	  "location": "Limerick, Ireland",
+	  "date": "Spring 2009"
+	},
+	{
+	  "degree": "High School Diploma",
+	  "institution": "Mohawk Trail Regional High School",
+	  "location": "Buckland, MA",
+	  "graduation_date": "May 2006"
+	}
   ],
   "outside_interests": [
-    "Improvisation",
-    "Interactive Storytelling",
-    "Procedural Generation",
-    "Emergent Narrative",
-    "Game Design",
-    "Singing",
-    "Performance"
+	"Improvisation",
+	"Interactive Storytelling",
+	"Procedural Generation",
+	"Emergent Narrative",
+	"Game Design",
+	"Singing",
+	"Performance"
   ]
 }
