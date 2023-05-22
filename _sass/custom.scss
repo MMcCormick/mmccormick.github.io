@@ -1,0 +1,13 @@
+.home {
+	a {
+		color: #1a0dab; // change this to the color you want for your links
+		text-decoration: none; // removes the underline from the links
+		display: inline-block; // ensures that links are not displayed on different lines
+		margin-right: 1em; // adds a right margin to each link to provide space between links
+
+		&:hover {
+			color: #D35400; // change this to the color you want when hovering over links
+			text-decoration: underline; // adds the underline back when hovering over the link
+		}
+	}
+}
