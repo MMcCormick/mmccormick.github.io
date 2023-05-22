@@ -53,9 +53,9 @@ contact_email: contact@mattcmccormick.com
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-exclude:
-  - .sass-cache/
-  - _sass/
+# exclude:
+#   - .sass-cache/
+#   - _sass/
 #   - .jekyll-cache/
 #   - gemfiles/
 #   - Gemfile
