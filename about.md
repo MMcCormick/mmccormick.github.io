@@ -21,7 +21,7 @@ Matt McCormick is a creative developer with a passion for AI technology, and ove
 
 ### Experience
 
-Throughout his career, Matt has held positions such as Senior Back-End Software Engineer, Full Stack Web Consultant, and CTO. His experience spans across different industries, and he has been instrumental in providing comprehensive solutions to numerous clients. Scroll down for a full list of his professional experience.
+Throughout his career, Matt has held positions such as Senior Back-End Software Engineer, Full Stack Web Consultant, and CTO. His experience spans across different industries, and he has been instrumental in providing comprehensive web solutions to numerous clients. Scroll down for a full list of his professional experience.
 
 ### Education
 

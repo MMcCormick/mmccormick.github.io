@@ -1,7 +1,7 @@
 {
-  "name": "Matt McCormick",
-  "title": "AI & Full-stack Web Developer | Startup Veteran | Passionate about AI",
-  "core_skills": [
+"name": "Matt McCormick",
+"title": "AI & Full-stack Web Developer | Startup Veteran | Passionate about AI",
+"core_skills": [
 	"Artificial Intelligence",
 	"Machine Learning",
 	"Python",
@@ -28,115 +28,204 @@
 	"VSCode, Sublime Text",
 	"nano",
 	"Complex Web Applications"
-  ],  
-  "experience": [
+],
+"experience": [
 	{
 		"position": "SWE",
 		"company": "Stealth",
-		"location":"New York, NY",
+		"location": "New York, NY",
 		"start_date": "December 2023",
 		"end_date": "Present",
-		"description":[
+		"description": [
 			"Exciting project combining custom chat agents with structured private data and vector databases"
 		]
 	},
 	{
-	  "position": "AI & Web Development Consultant",
-	  "company": "Self-Employed",
-	  "location": "New York, NY",
-	  "start_date": "January 2021",
-	  "end_date": "December 2023",
-	  "description": [
-		"Various projects involving AI, Machine Learning, Python, and chat interfaces",
-		"Utilized Docker for creating, deploying, and running applications across different platforms."
-	  ]	  
+		"position": "AI & Web Development Consultant",
+		"company": "Self-Employed",
+		"location": "New York, NY",
+		"start_date": "January 2021",
+		"end_date": "December 2023",
+		"description": [
+			"Various projects involving AI, Machine Learning, Python, and chat interfaces",
+			"Utilized Docker for creating, deploying, and running applications across different platforms."
+		]
 	},
 	{
-	  "position": "Acting CTO",
-	  "company": "One Click Politics",
-	  "location": "New York, NY",
-	  "start_date": "June 2020",
-	  "end_date": "January 2021",
-	  "description": [
-		"Led hiring during COVID-19, overseeing a seamless back-end team transition.",
-		"Prioritized major client accounts and directed resource allocation in line with board requirements.",
-		"Managed a team of back-end developers and coordinated with the front-end development team.",
-		"Restored the board's confidence in the technical leadership and became the primary point of contact for critical technical matters.",
-		"Became the primary point of contact for critical technical matters, restoring the board's confidence in technical leadership."
-	  ]
+		"position": "Acting CTO",
+		"company": "One Click Politics",
+		"location": "New York, NY",
+		"start_date": "June 2020",
+		"end_date": "January 2021",
+		"description": [
+			"Led hiring during COVID-19, overseeing a seamless back-end team transition.",
+			"Prioritized major client accounts and directed resource allocation in line with board requirements.",
+			"Managed a team of back-end developers and coordinated with the front-end development team.",
+			"Restored the board's confidence in the technical leadership and became the primary point of contact for critical technical matters.",
+			"Became the primary point of contact for critical technical matters, restoring the board's confidence in technical leadership."
+		]
 	},
 	{
-	  "position": "Senior Back-End Software Engineer",
-	  "company": "One Click Politics",
-	  "location": "New York, NY",
-	  "start_date": "February 2018",
-	  "end_date": "June 2020",
-	  "description": [
-		"Developed major features such as Video Messaging and Legislator Search.",
-		"Integrated three APIs for CRM metadata synchronization.",
-		"Maintained the existing RabbitMQ messaging system (200,000+ requests per day).",
-		"Performed ongoing data imports, code review, and bug fixes."
-	  ]
+		"position": "Senior Back-End Software Engineer",
+		"company": "One Click Politics",
+		"location": "New York, NY",
+		"start_date": "February 2018",
+		"end_date": "June 2020",
+		"description": [
+			"Developed major features such as Video Messaging and Legislator Search.",
+			"Integrated three APIs for CRM metadata synchronization.",
+			"Maintained the existing RabbitMQ messaging system (200,000+ requests per day).",
+			"Performed ongoing data imports, code review, and bug fixes."
+		]
 	},
 	{
-	  "position": "Full Stack Web Consultant",
-	  "company": "Self-Employed",
-	  "location": "Los Angeles, CA",
-	  "start_date": "January 2014",
-	  "end_date": "February 2018",
-	  "description": [
-		"Worked with many companies on a contract basis, including NinjaThat, FolioHD, Philosophie LLC, Laurel & Wolf, and Betterific."
-	  ]
+		"position": "Full Stack Web Consultant",
+		"company": "Self-Employed",
+		"location": "Los Angeles, CA",
+		"start_date": "January 2014",
+		"end_date": "February 2018",
+		"description": [
+			"Worked with many companies on a contract basis, including NinjaThat, FolioHD, Philosophie LLC, Laurel & Wolf, and Betterific."
+		]
 	},
 	{
-	  "position": "CTO / Web Developer",
-	  "company": "Swink.tv",
-	  "location": "Los Angeles, CA",
-	  "start_date": "June 2013",
-	  "end_date": "January 2014",
-	  "description": [
-		"Swink.tv is a browser-based video platform that allows parents and athletes to save, search and share their favorite youth sports memories.",
-		"Revamped user-facing front end of the pre-existing Swink.tv.",
-		"After working for months with unnecessarily complex legacy code, decided along with the CTO to rebuild a simplified product from the ground up.",
-		"Created a Rails API which could be consumed by an Ember.js front end."
-	  ]
+		"position": "CTO / Web Developer",
+		"company": "Swink.tv",
+		"location": "Los Angeles, CA",
+		"start_date": "June 2013",
+		"end_date": "January 2014",
+		"description": [
+			"Swink.tv is a browser-based video platform that allows parents and athletes to save, search and share their favorite youth sports memories.",
+			"Revamped user-facing front end of the pre-existing Swink.tv.",
+			"After working for months with unnecessarily complex legacy code, decided along with the CTO to rebuild a simplified product from the ground up.",
+			"Created a Rails API which could be consumed by an Ember.js front end."
+		]
 	},
 	{
-	  "position": "Co-Founder",
-	  "company": "Spruceling",
-	  "location": "Philadelphia, PA",
-	  "start_date": "September 2012",
-	  "end_date": "February 2013",
-	  "description": [
-		"Spruceling was a children’s clothing company formed at DreamIt Startup Accelerator in Philadelphia by the same team that created The Whoot.",
-		"As a technical co-founder, collaborated to create the Spruceling site, which matched donors and recipients.",
-		"This involved full stack Rails development, data management (PostgreSQL), design of the user interface, and interfacing with the Stamps.com API."
-	  ]
-	}      
-  ],
-  "education": [
-	{
-	  "degree": "B.A. Degree",
-	  "major": "Computer Science & Music",
-	  "institution": "Tufts University",
-	  "location": "Medford, MA",
-	  "graduation_date": "May 2010",
-	  "gpa": "3.75"
+		"position": "Co-Founder",
+		"company": "Spruceling",
+		"location": "Philadelphia, PA",
+		"start_date": "September 2012",
+		"end_date": "February 2013",
+		"description": [
+			"Spruceling was a children’s clothing company formed at DreamIt Startup Accelerator in Philadelphia by the same team that created The Whoot.",
+			"As a technical co-founder, collaborated to create the Spruceling site, which matched donors and recipients.",
+			"This involved full stack Rails development, data management (PostgreSQL), design of the user interface, and interfacing with the Stamps.com API."
+		]
 	},
 	{
-	  "program": "Semester Abroad",
-	  "institution": "University of Limerick, Ireland",
-	  "location": "Limerick, Ireland",
-	  "date": "Spring 2009"
-	},
-	{
-	  "degree": "High School Diploma",
-	  "institution": "Mohawk Trail Regional High School",
-	  "location": "Buckland, MA",
-	  "graduation_date": "May 2006"
+		"position": "Junior Software Engineer",
+		"company": "Tech Limelight",
+		"location": "Boston, MA",
+		"start_date": "June 2010",
+		"end_date": "August 2012",
+		"description": [
+			"Tech Limelight was a startup that provided a platform for companies to showcase their products and services.",
+			"Developed the front end of the site using HTML, CSS, JavaScript, and jQuery.",
+			"Developed the back end of the site using Ruby on Rails and PostgreSQL"
+		]
 	}
-  ],
-  "outside_interests": [
+],
+"education": [
+	{
+		"degree": "B.A. Degree",
+		"major": "Computer Science & Music",
+		"institution": "Tufts University",
+		"location": "Medford, MA",
+		"graduation_date": "May 2010",
+		"gpa": "3.75"
+	},
+	{
+		"program": "Semester Abroad",
+		"institution": "University of Limerick, Ireland",
+		"location": "Limerick, Ireland",
+		"date": "Spring 2009"
+	},
+	{
+		"degree": "High School Diploma",
+		"institution": "Mohawk Trail Regional High School",
+		"location": "Buckland, MA",
+		"graduation_date": "May 2006"
+	}
+],
+"projects": [
+	{
+		"name": "FolioHD",
+		"url": "https://foliohd.com/"
+	},
+	{
+		"name": "Laurel & Wolf",
+		"url": "https://www.laurelandwolf.com/"
+	},
+	{
+		"name": "Betterific - now IdeaScale",
+		"url": "https://crowd.ideascale.com/c/"
+	},
+	{
+		"name": "NinjaThat",
+		"url": "https://www.crunchbase.com/organization/ninjathat"
+	},
+	{
+		"name": "AI-Driven Chat Interface",
+		"startDate": "December 2023",
+		"endDate": "Present",
+		"summary": "Developed a unique AI-driven chat interface, integrating complex natural language processing techniques.",
+		"highlights": [
+			"Integrated GPT chatbot with custom vector databases",
+			"3x increase in personal development productivity since beginning to use AI tools"
+		]
+	},
+	{
+		"name": "Legislative Databases",
+		"startDate": "June 2020",
+		"endDate": "July 2021",
+		"summary": "Developed a 'Legislator Search' feature from public data sets, allowing users one easy access point for all their legislative information.",
+		"highlights": [
+			"Contributed to open source projects such as the unitedstates/congress-legislators project on GitHub",
+			"Completed the project in less than a month, allowing the company to meet a critical deadline"
+		],
+		"url": "https://github.com/unitedstates/congress-legislators"
+	},
+	{
+		"name": "Video Messaging",
+		"startDate": "February 2019",
+		"endDate": "June 2020",
+		"summary": "Designed and implemented a new video messaging feature for One Click Politics, allowing advocates to engage further with their leaders.",
+		"highlights": [
+			"Fully integrated a major new feature into the complex existing platform",
+			"Significantly increased user engagement and interaction"
+		],
+		"url": "https://oneclickpolitics.com/advocacy"
+	},
+	{
+		"name": "CRM Metadata Synchronization",
+		"startDate": "February 2018",
+		"endDate": "January 2019",
+		"summary": "Integrated three APIs for CRM metadata synchronization, allowing more customers 2-way contact syncing.",
+		"url": "https://oneclickpolitics.com/integrations/"
+	},
+	{
+		"name": "Spruceling (DreamIt Startup Accelerator)",
+		"startDate": "September 2012",
+		"endDate": "February 2013",
+		"summary": "Co-developed the Spruceling website, connecting donors and recipients of children's clothing in an innovative way.",
+		"highlights": [
+			"Full stack Rails development",
+			"Interfacing with Stamps.com API"
+		]
+	},
+	{
+		"name": "Swink.tv UI & API Redesign",
+		"startDate": "June 2013",
+		"endDate": "January 2014",
+		"summary": "Redesigned user-facing front end and built a Rails API for Swink.tv, creating a streamlined experience for users and making the platform more accessible.",
+		"highlights": [
+			"Significantly improved user experience",
+			"Greatly simplified database and codebase"
+		]
+	}
+],
+"outside_interests": [
 	"Improvisation",
 	"Interactive Storytelling",
 	"Procedural Generation",
@@ -144,5 +233,5 @@
 	"Game Design",
 	"Singing",
 	"Performance"
-  ]
+]
 }
