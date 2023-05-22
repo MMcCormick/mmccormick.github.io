@@ -10,8 +10,10 @@ list_title: Recent Posts
 {% for project in site.data.resume.projects %}
 <!-- Only display as link if there's a URL -->
 {% if project.url %}
-- [{{ project.name }}]({{ project.url }})
+<!-- - [{{ project.name }}]({{ project.url }}) -->
+<!-- make the links target _blank -->
+<h3><a target="_blank" href="{{ project.url }}">{{ project.name }}</a></h3>
 {% else %}
-- {{ project.name }}
+<h3>{{ project.name }}</h3>
 {% endif %}
 {% endfor %}
