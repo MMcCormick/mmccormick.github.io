@@ -5,7 +5,7 @@ date: 2023-04-23 10:30:00 -0400
 categories: AI passion-project interactive-storytelling
 ---
 
-I've always been fascinated by the intersection of AI, game design, and storytelling. This passion led me to create an AI-powered interactive storytelling engine. The engine uses advanced natural language processing and machine learning techniques to generate engaging and dynamic stories based on user input.
+I've always been fascinated by AI, game design, and storytelling. This passion led me to create an AI-powered interactive storytelling engine. The engine uses advanced natural language processing and machine learning techniques to generate engaging and dynamic stories based on user input.
 
 <!-- ![Sample Screenshot](/assets/images/sample-screenshot.png) -->
 

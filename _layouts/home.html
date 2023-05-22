@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<head>
+	<link rel="stylesheet" href="{{ " /assets/main.css" | relative_url }}">
+</head>
+
+<div class="home">
+	<p><a href="https://twitter.com/{{ site.twitter_username }}">@{{ site.twitter_username }}</a> | <a href="mailto:{{ site.email }}">email</a></p>
+
+	<h2>Current Work</h2>
+	<!-- Get the first 'experience' entry in my JSON resume -->
+	{% assign experience = site.data.resume.experience | first %}
+	<p>{{ experience.position }}, {{ experience.company }}</p>
+
+	<h2>Past Work</h2>
+	<!-- Loop through projects in resume as links (name and url fields) -->
+	{% for project in site.data.resume.projects %}
+		<!-- Only display as link if there's a URL -->
+		{% if project.url %}
+			<p><a target="_blank" href="{{ project.url }}">{{ project.name }}</a></p>
+		{% else %}
+			<p>{{ project.name }}</p>
+		{% endif %}
+	{% endfor %}
+
+	<!-- <h2>Creative Projects</h2> -->
+	<!-- Add content about other stuff & silly business here -->
+
+</div>
