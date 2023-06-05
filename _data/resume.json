@@ -34,7 +34,7 @@
 		"position": "SWE",
 		"company": "Stealth",
 		"location": "New York, NY",
-		"start_date": "December 2023",
+		"start_date": "December 2022",
 		"end_date": "Present",
 		"description": [
 			"Exciting project combining custom chat agents with structured private data and vector databases"
@@ -45,7 +45,7 @@
 		"company": "Self-Employed",
 		"location": "New York, NY",
 		"start_date": "January 2021",
-		"end_date": "December 2023",
+		"end_date": "December 2022",
 		"description": [
 			"Various projects involving AI, Machine Learning, Python, and chat interfaces",
 			"Utilized Docker for creating, deploying, and running applications across different platforms."
@@ -167,7 +167,7 @@
 	},
 	{
 		"name": "AI-Driven Chat Interface",
-		"startDate": "December 2023",
+		"startDate": "December 2022",
 		"endDate": "Present",
 		"summary": "Developed a unique AI-driven chat interface, integrating complex natural language processing techniques.",
 		"highlights": [
