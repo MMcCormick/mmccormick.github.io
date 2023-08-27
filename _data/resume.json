@@ -204,24 +204,26 @@
 		"url": "https://oneclickpolitics.com/integrations/"
 	},
 	{
-		"name": "Spruceling (DreamIt Startup Accelerator)",
+		"name": "Spruceling (DreamIt 2012)",
 		"startDate": "September 2012",
 		"endDate": "February 2013",
 		"summary": "Co-developed the Spruceling website, connecting donors and recipients of children's clothing in an innovative way.",
 		"highlights": [
 			"Full stack Rails development",
 			"Interfacing with Stamps.com API"
-		]
+		],
+		"url": "https://www.dreamit.com/"
 	},
 	{
 		"name": "Swink.tv UI & API Redesign",
 		"startDate": "June 2013",
 		"endDate": "January 2014",
-		"summary": "Redesigned user-facing front end and built a Rails API for Swink.tv, creating a streamlined experience for users and making the platform more accessible.",
+		"summary": "Redesigned user-facing front end and built a Rails API for Swink.tv, a sports video analysis platform. Swink was then acquired by CoachNow.",
 		"highlights": [
 			"Significantly improved user experience",
 			"Greatly simplified database and codebase"
-		]
+		],
+		"url": "https://coachnow.io/"
 	}
 ],
 "outside_interests": [

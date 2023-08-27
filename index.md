@@ -19,3 +19,5 @@ list_title: Recent Posts
 {% endif %}
 </h4>
 {% endfor %}
+
+##### See [About]({{ site.baseurl }}{% link about.md %}) for details on my contributions to each project.
