@@ -8,12 +8,14 @@ list_title: Recent Posts
 ## Past Work
 <!-- Loop through projects in resume as links (name and url fields) -->
 {% for project in site.data.resume.projects %}
+<h4 class="work-link">
 <!-- Only display as link if there's a URL -->
 {% if project.url %}
 <!-- - [{{ project.name }}]({{ project.url }}) -->
 <!-- make the links target _blank -->
-<h3><a target="_blank" href="{{ project.url }}">{{ project.name }}</a></h3>
+<a target="_blank" href="{{ project.url }}">{{ project.name }}</a>
 {% else %}
-<h3>{{ project.name }}</h3>
+{{ project.name }}
 {% endif %}
+</h4>
 {% endfor %}
