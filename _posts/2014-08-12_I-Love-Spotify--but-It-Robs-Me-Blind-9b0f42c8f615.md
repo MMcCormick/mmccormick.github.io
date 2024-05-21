@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "I Love Spotify, but It Robs Me Blind"
+date:   2014-08-12 17:50:00 -0400
+categories: music creative economics millenial capitalism
+---
 <div>
 
 # I Love Spotify, but It Robs Me Blind {#i-love-spotify-but-it-robs-me-blind .p-name}

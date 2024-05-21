@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "Lobbyists Ruin Capitalism"
+date:   2014-07-31 09:45:00 -0400
+categories: political writing economics oligarchy capitalism
+---
 <div>
 
 # Lobbyists Ru(i)n Capitalism {#lobbyists-ruin-capitalism .p-name}

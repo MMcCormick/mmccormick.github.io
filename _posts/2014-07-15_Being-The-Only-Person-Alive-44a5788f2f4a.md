@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "Being The Only Person Alive"
+date:   2014-07-15 23:08:00 -0400
+categories: creative story writing
+---
 <div>
 
 # Being The Only Person Alive {#being-the-only-person-alive .p-name}

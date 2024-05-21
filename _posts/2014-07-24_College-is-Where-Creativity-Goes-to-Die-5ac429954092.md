@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "College is Where Creativity Goes to Die"
+date:   2014-07-24 23:08:00 -0400
+categories: college creative
+---
 <div>
 
 # College is Where Creativity Goes to Die {#college-is-where-creativity-goes-to-die .p-name}

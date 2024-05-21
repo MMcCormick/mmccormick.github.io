@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "I'm Not Artificial"
+date:   2015-07-01 12:00:00 -0400
+categories: story creative writing
+---
 <div>
 
 # "I'm Not Artificial" {#im-not-artificial .p-name}

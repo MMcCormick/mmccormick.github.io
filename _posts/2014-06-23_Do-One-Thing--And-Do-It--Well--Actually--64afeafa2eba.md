@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "Do One Thing, And Do It... Well, Actually..."
+date:   2014-06-23 23:08:00 -0400
+categories: creative google
+---
+
 <div>
 
 # Do One Thing, And Do It... Well, Actually... {#do-one-thing-and-do-it-well-actually .p-name}

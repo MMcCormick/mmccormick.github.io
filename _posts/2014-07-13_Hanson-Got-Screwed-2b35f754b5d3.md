@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "Hanson Got Screwed"
+date:   2014-07-13 21:01:00 -0400
+categories: hanson music creative
+---
 <div>
 
 # Hanson Got Screwed {#hanson-got-screwed .p-name}

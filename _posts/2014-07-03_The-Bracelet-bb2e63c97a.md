@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "Do One Thing, And Do It... Well, Actually..."
+date:   2014-07-03 05:08:00 -0400
+categories: bracelet
+---
 <div>
 
 # The Bracelet {#the-bracelet .p-name}

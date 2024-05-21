@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "Do One Thing, And Do It... Well, Actually..."
+date:   2014-07-29 15:18:00 -0400
+categories: sex physical appreciation writing story
+---
 <div>
 
 # The Sexes and Physical Appreciation {#the-sexes-and-physical-appreciation .p-name}
