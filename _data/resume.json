@@ -1,20 +1,35 @@
 {
 "name": "Matt McCormick",
 "title": "AI & Full-stack Web Developer | Startup Veteran | Passionate about AI",
+"summary": "Full Stack Web Developer with extensive experience in startups. Excels in developing creative solutions, with a strong foundation in Ruby on Rails, JavaScript, Python, and AI technologies. Passionate about creativity and great design.",
 "core_skills": [
 	"Artificial Intelligence",
 	"Machine Learning",
-	"Python",
-	"OpenAI",
 	"Natural Language Processing",
-	"Full-Stack Web Development",
+	"Python",
+	"Ruby",
+	"JavaScript",
+	"HTML5",
+	"CSS/SASS",
+	"Flask",
 	"Ruby on Rails",
-	"JavaScript / jQuery / Coffeescript",
-	"HTML5 / HAML / SLIM",
-	"CSS / SASS",
+	"Bootstrap",
+	"Coffeescript",
+	"LangChain",
+	"OpenAI",
+	"Vector Databases",
+	"Pinecone",
+	"Full-Stack Web Development",
+	"Web System Design",
+	"RESTful API Development",
+	"HTML5 Video",
+	"CRM Systems",
+	"PostgreSQL",
+	"MySQL",
+	"MongoDB",
+	"ActiveRecord",
+	"Mongoid",
 	"API Development",
-	"PostgreSQL / MySQL / ActiveRecord",
-	"MongoDB / Mongoid",
 	"Project Management",
 	"Team Leadership",
 	"Docker",
@@ -25,30 +40,24 @@
 	"npm",
 	"Automation (workflow, data)",
 	"Chat Interfaces",
-	"VSCode, Sublime Text",
+	"VSCode",
+	"Sublime Text",
 	"nano",
 	"Complex Web Applications"
 ],
 "experience": [
 	{
-		"position": "SWE",
-		"company": "Stealth",
+		"position": "Independent Game Developer / AI Engineer",
+		"company": "Choice Rolls",
 		"location": "New York, NY",
-		"start_date": "December 2022",
+		"start_date": "January 2023",
 		"end_date": "Present",
 		"description": [
-			"Exciting project combining custom chat agents with structured private data and vector databases"
-		]
-	},
-	{
-		"position": "AI & Web Development Consultant",
-		"company": "Self-Employed",
-		"location": "New York, NY",
-		"start_date": "January 2021",
-		"end_date": "December 2022",
-		"description": [
-			"Various projects involving AI, Machine Learning, Python, and chat interfaces",
-			"Utilized Docker for creating, deploying, and running applications across different platforms."
+			"Developed a fully interactive, text-based adventure game with AI-driven mechanics, currently in private beta.",
+			"Explored cutting-edge AI technologies such as OpenAI, vector databases, and embedding methods.",
+			"Implemented semantic memory using plaintext, JSON, and vectors to create deep, emergent storytelling experiences.",
+			"Demonstrated ongoing commitment to advancing technical skills and passion for blending creative writing with AI-driven gameplay.",
+			"Utilized technologies including Pinecone, Python, LangChain, and CRM systems."
 		]
 	},
 	{
@@ -165,9 +174,29 @@
 		"url": "https://www.crunchbase.com/organization/ninjathat"
 	},
 	{
+		"name": "Choice Rolls",
+		"startDate": "January 2023",
+		"endDate": "Present",
+		"summary": "Developed a fully interactive, AI-driven text-based adventure game, currently in private beta.",
+		"highlights": [
+			"Explored cutting-edge AI technologies, including OpenAI, vector databases, and embedding methods.",
+			"Implemented semantic memory using plaintext, JSON, and vectors to create deep, emergent storytelling experiences.",
+			"Demonstrated passion for blending creative writing with AI-driven gameplay."
+		],
+		"technologies": [
+			"Python",
+			"Pinecone",
+			"LangChain",
+			"OpenAI",
+			"CRM Systems"
+		],
+		"notes": "Demonstrations available upon request. Private GitHub repositories available upon written agreement.",
+		"url": "https://choicerolls.com/"
+	},
+	{
 		"name": "AI-Driven Chat Interface",
 		"startDate": "December 2022",
-		"endDate": "Present",
+		"endDate": "January 2023",
 		"summary": "Developed a unique AI-driven chat interface, integrating complex natural language processing techniques.",
 		"highlights": [
 			"Integrated GPT chatbot with custom vector databases",
