@@ -1,0 +1,70 @@
+- title: Choice Rolls
+  title-url: https://choicerolls.com/
+  date: Jan 2023 - Present
+  subtitle: Independent Game Developer / AI Engineer
+  timeline-side: left
+  tags:
+    - tag: Python
+    - tag: OpenAI
+    - tag: LangChain
+    - tag: Pinecone
+    - tag: Vector Databases
+
+- title: One Click Politics
+  title-url: https://oneclickpolitics.com/
+  date: Jun 2020 - Jan 2021
+  subtitle: Acting CTO
+  timeline-side: right
+  tags:
+    - tag: Team Leadership
+    - tag: Ruby on Rails
+    - tag: Technical Management
+
+- title: One Click Politics
+  title-url: https://oneclickpolitics.com/
+  date: Feb 2018 - Jun 2020
+  subtitle: Senior Back-End Software Engineer
+  timeline-side: left
+  tags:
+    - tag: Ruby on Rails
+    - tag: RabbitMQ
+    - tag: API Integration
+
+- title: Freelance Consulting
+  title-url: 
+  date: Jan 2014 - Feb 2018
+  subtitle: Full Stack Web Consultant
+  timeline-side: right
+  tags:
+    - tag: Ruby on Rails
+    - tag: JavaScript
+    - tag: HTML/CSS
+
+- title: Swink.tv
+  title-url: 
+  date: Jun 2013 - Jan 2014
+  subtitle: CTO / Web Developer
+  timeline-side: left
+  tags:
+    - tag: Rails API
+    - tag: Ember.js
+    - tag: Video Platform
+
+- title: Spruceling
+  title-url: https://www.dreamit.com/
+  date: Sep 2012 - Feb 2013
+  subtitle: Co-Founder
+  timeline-side: right
+  tags:
+    - tag: Startup
+    - tag: Ruby on Rails
+    - tag: PostgreSQL
+
+- title: Tufts University
+  title-url: https://www.tufts.edu/
+  date: Graduated May 2010
+  subtitle: B.A. in Computer Science & Music
+  timeline-side: left
+  tags:
+    - tag: Computer Science
+    - tag: Music 

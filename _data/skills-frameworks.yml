@@ -1,0 +1,17 @@
+- name: Ruby on Rails
+  weight: 5
+
+- name: Flask
+  weight: 4
+
+- name: LangChain
+  weight: 5
+
+- name: Bootstrap
+  weight: 4
+
+- name: OpenAI
+  weight: 5
+
+- name: RESTful APIs
+  weight: 5 

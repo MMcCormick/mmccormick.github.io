@@ -1,0 +1,20 @@
+- name: Python
+  weight: 5
+
+- name: Ruby
+  weight: 5
+
+- name: JavaScript
+  weight: 5
+
+- name: HTML5
+  weight: 5
+
+- name: CSS/SASS
+  weight: 4
+
+- name: SQL
+  weight: 4
+
+- name: CoffeeScript
+  weight: 3 
