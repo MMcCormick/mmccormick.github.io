@@ -17,4 +17,10 @@
   weight: 4
 
 - name: CoffeeScript
+  weight: 3
+
+- name: Bash
+  weight: 3
+
+- name: C/C++
   weight: 3 

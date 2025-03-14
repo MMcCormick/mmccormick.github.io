@@ -1,20 +1,11 @@
 - name: PostgreSQL
   weight: 5
 
-- name: MySQL
-  weight: 4
-
-- name: MongoDB
-  weight: 4
-
 - name: Vector Databases
   weight: 5
 
 - name: Pinecone
   weight: 5
-
-- name: Docker
-  weight: 4
 
 - name: Git
   weight: 5
@@ -23,4 +14,31 @@
   weight: 5
 
 - name: Linux/Mac/Windows
-  weight: 5 
+  weight: 5
+
+- name: Docker
+  weight: 4
+
+- name: MySQL
+  weight: 4
+
+- name: MongoDB
+  weight: 4
+
+- name: Redis
+  weight: 4
+
+- name: AWS
+  weight: 4
+
+- name: CI/CD
+  weight: 4
+
+- name: Heroku
+  weight: 4
+
+- name: GraphQL
+  weight: 3
+
+- name: Kubernetes
+  weight: 3 
