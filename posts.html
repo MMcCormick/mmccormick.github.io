@@ -1,0 +1,36 @@
+---
+layout: base
+title: Blog Posts
+permalink: /posts/
+---
+<div class="post-header">
+  <div class="landing-title">
+    <h1>
+      <a href="{{ site.baseurl }}/" class="highlight-link">{{ site.username }}</a>
+    </h1>
+  </div>
+</div>
+
+<div class="layout">
+  <section class="card neumorphism-card-big">
+    <h1 class="title">Blog Posts</h1>
+    
+    <div class="posts-list-container">
+      {% for post in site.posts %}
+        <div class="post-item">
+          <h2>
+            <a href="{{ post.url | relative_url }}" class="post-link">{{ post.title | escape }}</a>
+          </h2>
+          <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
+          <div class="post-categories">
+            {% for category in post.categories %}
+              <span class="tag neumorphism-card">{{ category }}</span>
+            {% endfor %}
+          </div>
+          <p class="post-excerpt">{{ post.excerpt }}</p>
+          <a href="{{ post.url | relative_url }}" class="highlight-link">Read more →</a>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+</div> 
