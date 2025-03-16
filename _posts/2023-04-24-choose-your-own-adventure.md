@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: post
 title: "Choose Your Own Adventure: AI-Powered Interactive Storytelling"
 date: 2023-04-23 10:30:00 -0400
 categories: AI passion-project interactive-storytelling

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="description" content="{{ page.excerpt | strip_html | truncate: 160 }}">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ "/assets/favicon/apple-touch-icon.png" | prepend: site.baseurl }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ "/assets/favicon/favicon-32x32.png" | prepend: site.baseurl }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ "/assets/favicon/favicon-16x16.png" | prepend: site.baseurl }}">
+  <link rel="manifest" href="{{ "/assets/favicon/site.webmanifest" | prepend: site.baseurl }}">
+
+  <link rel="stylesheet" href="{{ "/assets/css/main.min.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/assets/css/vendors.min.css" | prepend: site.baseurl }}">
+  
+  <!-- Custom blog post styles -->
+  <style>
+    .post-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    
+    .post-title {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .post-meta {
+      color: #666;
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+    
+    .post-categories {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .post-content {
+      line-height: 1.8;
+      font-size: 1.1rem;
+    }
+    
+    .post-content h2 {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+    
+    .post-content p {
+      margin-bottom: 1.5rem;
+    }
+    
+    .post-content img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 2rem auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    
+    .post-content pre {
+      margin: 1.5rem 0;
+      padding: 1rem;
+      border-radius: 8px;
+      background-color: #f5f5f5;
+      overflow-x: auto;
+    }
+    
+    .post-content code {
+      font-family: 'Courier New', Courier, monospace;
+    }
+    
+    .post-navigation {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #eee;
+    }
+    
+    .back-home {
+      display: block;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .post-title {
+        font-size: 2rem;
+      }
+      
+      .post-content {
+        font-size: 1rem;
+      }
+    }
+  </style>
+
+  <script src="{{ "/assets/js/vendors.min.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "/assets/js/app.min.js" | prepend: site.baseurl }}"></script>
+  
+  {% if site.google_analytics %}
+    {% include google-analytics.html %}
+  {% endif %}
+</head>
+
+<body>
+  <div id="preloader">
+    <div class="load">
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+    </div>
+  </div>
+  
+  <!-- Mini header with home link -->
+  <div class="mini-header neumorphism-card" style="padding: 1rem; margin: 1rem; text-align: center;">
+    <a href="{{ site.baseurl }}/" class="highlight-link">{{ site.title }}</a>
+  </div>
+  
+  <div class="layout">
+    <section class="card neumorphism-card-big">
+      <div class="post-container" style="padding: 2rem;">
+        <header class="post-header">
+          <h1 class="post-title">{{ page.title }}</h1>
+          <p class="post-meta">{{ page.date | date: "%B %d, %Y" }}</p>
+          
+          {% if page.categories.size > 0 %}
+          <div class="post-categories">
+            {% for category in page.categories %}
+              <span class="tag neumorphism-card">{{ category }}</span>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </header>
+        
+        <div class="post-content">
+          {{ content }}
+        </div>
+        
+        <div class="post-navigation">
+          {% if page.previous %}
+            <a href="{{ page.previous.url | relative_url }}" class="highlight-link">← {{ page.previous.title }}</a>
+          {% else %}
+            <span></span>
+          {% endif %}
+          
+          {% if page.next %}
+            <a href="{{ page.next.url | relative_url }}" class="highlight-link">{{ page.next.title }} →</a>
+          {% else %}
+            <span></span>
+          {% endif %}
+        </div>
+        
+        <a href="{{ site.baseurl }}/" class="highlight-link back-home">← Back to Home</a>
+      </div>
+    </section>
+  </div>
+  
+  {% include footer.html %}
+  
+  <script>
+    // Add syntax highlighting to code blocks
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('pre code').forEach(function(block) {
+        hljs.highlightBlock(block);
+      });
+    });
+  </script>
+</body>
+</html> 

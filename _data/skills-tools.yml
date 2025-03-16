@@ -5,40 +5,40 @@
   weight: 5
 
 - name: Pinecone
-  weight: 5
+  weight: 4
 
 - name: Git
-  weight: 5
+  weight: 4
 
 - name: VSCode
-  weight: 5
+  weight: 3
 
 - name: Linux/Mac/Windows
-  weight: 5
+  weight: 3
 
 - name: Docker
-  weight: 4
+  weight: 2
 
 - name: MySQL
-  weight: 4
+  weight: 2
 
 - name: MongoDB
-  weight: 4
+  weight: 1
 
 - name: Redis
-  weight: 4
+  weight: 1
 
 - name: AWS
   weight: 4
 
 - name: CI/CD
-  weight: 4
-
-- name: Heroku
-  weight: 4
-
-- name: GraphQL
   weight: 3
 
+- name: Heroku
+  weight: 2
+
+- name: GraphQL
+  weight: 1
+
 - name: Kubernetes
-  weight: 3 
+  weight: 1 
