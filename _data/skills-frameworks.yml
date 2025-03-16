@@ -1,0 +1,32 @@
+- name: Ruby on Rails
+  weight: 5
+
+- name: LangChain
+  weight: 5
+
+- name: OpenAI
+  weight: 4
+
+- name: Flask
+  weight: 4
+
+- name: React
+  weight: 3
+
+- name: Bootstrap
+  weight: 3
+
+- name: jQuery
+  weight: 2
+
+- name: Express.js
+  weight: 2
+
+- name: Vue.js
+  weight: 1
+
+- name: Django
+  weight: 1
+
+- name: RESTful APIs
+  weight: 5 

@@ -20,25 +20,96 @@ description: >- # this means to ignore newlines until "baseurl:"
   AI Systems & Full-Stack Web Developer with over 15 years of experience, specializing in AI-powered web interfaces & startup growth.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://mmccormick.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: mattcmccormick
+# twitter_username: mattcmccormick
 linkedin_username: mattcmccormick
 github_username:  mmccormick
-header_pages:
-  - about.md
-  - posts.md
-  - contact.md
-# Build settings
-theme: minima
 
-plugins:
-  - jekyll-feed
-  - jekyll-data
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-paginate
-  - jekyll-remote-theme
-  - jekyll-mentions
-  - jemoji
+# LANDING PAGE
+# username: This will displayed on the landing page as your name.
+username: Matt McCormick
+# typing_text: This will be typed before 'scroll down for more'.
+# > set this to your job title, e.g. Fullstack Developer
+typing_text: AI Systems & Full-Stack Web Developer
+
+# ABOUT ME SECTION
+# show_aboutme_card:
+# > setting this to true, will display the About Me section
+# > setting this to false, will omit the About Me section
+show_aboutme_card: true
+# about_me_title: The will be displayed as the title in the About Me section
+about_me_title: About Me
+# about_me_description: This will be displayed under the title.
+about_me_description: I'm a seasoned software engineer specializing in AI-powered web interfaces & building from the ground up.
+
+# SKILLS SECTION
+# show_skills_card:
+# > setting this to true, will display the Skills section
+# > setting this to false, will omit the Skills section
+show_skills_card: true
+# about_me_title: The will be displayed as the title in the Skills section
+skills_title: My Skills
+
+# TIMELINE SECTION
+# show_timeline_card:
+# > setting this to true, will display the Timeline section
+# > setting this to false, will omit the Timeline section
+show_timeline_card: true
+# timeline_title: The will be displayed as the title in the Timeline section
+timeline_title: My Journey
+# cv_download_link: The link where you host your cv.
+# > e.g. you share your cv on your dropbox, then add the dropbox link here
+cv_download_link:
+
+# PROJECTS SECTION
+# show_projects_card:
+# > setting this to true, will display the Projects section
+# > setting this to false, will omit the Projects section
+show_projects_card: true
+# show_projects:
+# > setting this to true, will display your listed projects in _data/projects.yml
+# > setting this to false, will omit your listed projects
+show_projects: true
+# projects_title: The will be displayed as the title of your projects
+projects_title: My Projects
+# show_os_projects:
+# > setting this to true, will display your public projects on github
+# > setting this to false, will omit your public projects on github
+show_os_projects: true
+# os_projects_title: The will be displayed as the title of your open source projects
+os_projects_title: Open Source Contributions
+
+# CONTACT SECTION
+# show_contact_card:
+# > setting this to true, will display the Contact section
+# > setting this to false, will omit the Contact section
+show_contact_card: true
+# contact_title: The will be displayed as the title in the Contact section
+contact_title: Get in Touch
+# contact_description: This will be displayed under the title.
+contact_description: Feel free to reach out to me via email or social media.
+
+# GITHUB-METADATA
+# Set this to your forked repository
+# > e.g. <user>/<user>.github.io
+repository: mmccormick/mmccormick.github.io
+projects:
+  # sortby:
+  # > set this to pushed, if you want to sort your github repositories by time.
+  # > set this to stars, if you want to sort your github repositories by stars.
+  sort_by: pushed
+  exclude:
+    # archived:
+    # > setting this to true, will exclude archived repositories
+    # > setting this to false, will also display archived repositories
+    archived: false
+    # forks:
+    # > setting this to true, will exclude forked repositories
+    # > setting this to false, will also display forked repositories
+    forks: true
+    # projects: A list of the repository names you want to exclude from the listing.
+    projects:
+    - mmccormick.github.io
+    # - repo2-to-be-excluded
 
 # Google Analytics
 # mmccormick.github.io:
@@ -48,6 +119,18 @@ google_analytics: G-JQ232L7CYC
 
 contact_email: contact@mattcmccormick.com
 
+# Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-data
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-remote-theme
+  - jekyll-mentions
+  - jemoji
+  - "jekyll-github-metadata"
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
@@ -56,15 +139,12 @@ contact_email: contact@mattcmccormick.com
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
-#   - .sass-cache/
-#   - _sass/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  [
+    "_assets",
+    "Gemfile",
+    "Gemfile.lock",
+    "gulpfile.js",
+    "node_modules",
+    "package.json",
+  ]

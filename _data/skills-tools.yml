@@ -1,0 +1,44 @@
+- name: PostgreSQL
+  weight: 5
+
+- name: Vector Databases
+  weight: 5
+
+- name: Pinecone
+  weight: 4
+
+- name: Git
+  weight: 4
+
+- name: VSCode
+  weight: 3
+
+- name: Linux/Mac/Windows
+  weight: 3
+
+- name: Docker
+  weight: 2
+
+- name: MySQL
+  weight: 2
+
+- name: MongoDB
+  weight: 1
+
+- name: Redis
+  weight: 1
+
+- name: AWS
+  weight: 4
+
+- name: CI/CD
+  weight: 3
+
+- name: Heroku
+  weight: 2
+
+- name: GraphQL
+  weight: 1
+
+- name: Kubernetes
+  weight: 1 

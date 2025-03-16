@@ -1,0 +1,41 @@
+- name: Choice Rolls
+  descr: "Developed a fully interactive, AI-driven text-based adventure game, currently in private beta. Explored cutting-edge AI technologies, including OpenAI, vector databases, and embedding methods."
+  demo: https://choicerolls.com/
+  tags:
+    - tag: Python
+    - tag: OpenAI
+    - tag: LangChain
+    - tag: Pinecone
+    - tag: Vector Databases
+
+- name: Legislative Databases
+  descr: "Developed a 'Legislator Search' feature from public data sets, allowing users one easy access point for all their legislative information."
+  demo: https://github.com/unitedstates/congress-legislators
+  tags:
+    - tag: Ruby on Rails
+    - tag: Open Source
+    - tag: Data Processing
+
+- name: Video Messaging
+  descr: "Designed and implemented a new video messaging feature for One Click Politics, allowing advocates to engage further with their leaders."
+  demo: https://oneclickpolitics.com/advocacy
+  tags:
+    - tag: Ruby on Rails
+    - tag: Video
+    - tag: API Integration
+
+- name: FolioHD
+  descr: "Online portfolio platform for creative professionals."
+  demo: https://foliohd.com/
+  tags:
+    - tag: Ruby on Rails
+    - tag: JavaScript
+    - tag: Portfolio Platform
+
+- name: Laurel & Wolf
+  descr: "Online interior design service connecting designers with clients."
+  demo: https://www.laurelandwolf.com/
+  tags:
+    - tag: Ruby on Rails
+    - tag: JavaScript
+    - tag: Design Platform 
