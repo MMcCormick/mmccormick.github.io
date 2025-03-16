@@ -8,14 +8,6 @@
     - tag: Pinecone
     - tag: Vector Databases
 
-- name: AI-Driven Chat Interface
-  descr: "Developed a unique AI-driven chat interface, integrating complex natural language processing techniques. Integrated GPT chatbot with custom vector databases."
-  demo: https://agentsmiths.com/
-  tags:
-    - tag: AI
-    - tag: NLP
-    - tag: Vector Databases
-
 - name: Legislative Databases
   descr: "Developed a 'Legislator Search' feature from public data sets, allowing users one easy access point for all their legislative information."
   demo: https://github.com/unitedstates/congress-legislators
