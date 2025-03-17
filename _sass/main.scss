@@ -309,7 +309,7 @@ a {
         colorEmail 1s linear forwards;
     }
     .social-svg {
-      fill: #4a9cc9;
+      fill: #d44638;
     }
   }
 
@@ -319,7 +319,7 @@ a {
         colorLinkedin 1s linear forwards;
     }
     .social-svg {
-      fill: #0077b5;
+      fill: #007bb6;
     }
   }
 
@@ -361,13 +361,13 @@ a {
 
   @keyframes colorEmail {
     to {
-      stroke: #4a9cc9;
+      stroke: #b23121;
     }
   }
 
   @keyframes colorLinkedin {
     to {
-      stroke: #0077b5;
+      stroke: #007bb6;
     }
   }
 
