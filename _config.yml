@@ -30,6 +30,8 @@ username: Matt McCormick
 # typing_text: This will be typed before 'scroll down for more'.
 # > set this to your job title, e.g. Fullstack Developer
 typing_text: AI Systems & Full-Stack Web Developer
+# profile_image: The path to your profile image (for the About Me section)
+profile_image: /assets/img/profile.jpg
 
 # ABOUT ME SECTION
 # show_aboutme_card:
