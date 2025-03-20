@@ -6,7 +6,7 @@ permalink: /about/
 
 ## About Matt McCormick
 
-Matt McCormick is a creative developer with a passion for AI technology, and over 15 years of experience in software. If you need a complex web application for your MVP, he's made about 100 of those. Matt has also worked on at-scale applications passing millions of messages per day. He's extremely passionate about the intersection of AI language models and human storytelling.
+Matt McCormick is a full stack web developer with a passion for AI technology, and well over a decade of experience creating production grade software. If you need a complex web application for your MVP, he's made many of those. Matt has also worked on at-scale applications passing millions of messages per day. He's extremely passionate about the intersection of large language models and storytelling.
 
 ### Core Skills
 <p>
@@ -21,7 +21,7 @@ Matt McCormick is a creative developer with a passion for AI technology, and ove
 
 ### Experience
 
-Throughout his career, Matt has held positions such as Senior Back-End Software Engineer, Full Stack Web Consultant, and CTO. His experience spans across different industries, and he has been instrumental in providing comprehensive web solutions to numerous clients. Scroll down for a full list of his professional experience.
+Throughout his career, Matt has held positions such as Senior Back End Software Engineer, Full Stack Web Consultant, and CTO. His experience spans across different industries, and he has been instrumental in providing comprehensive web solutions to numerous clients. Scroll down for a full list of his professional experience.
 
 ### Education
 

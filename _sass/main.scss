@@ -963,9 +963,3 @@ a {
   margin: 0 auto;
   max-width: 85%;
 }
-
-@media only screen and (min-width: $small-screen) {
-  .about-content {
-    max-width: 70%;
-  }
-}

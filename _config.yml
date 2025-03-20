@@ -17,7 +17,7 @@
 title: Matt McCormick, AI & Web Developer
 email: info@mattcmccormick.com
 description: >- # this means to ignore newlines until "baseurl:"
-  AI Systems & Full-Stack Web Developer with over 15 years of experience, specializing in AI-powered web interfaces & startup growth.
+  Full-Stack Web Developer specializing in AI-powered web interfaces.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://mmccormick.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: mattcmccormick
@@ -29,7 +29,7 @@ github_username:  mmccormick
 username: Matt McCormick
 # typing_text: This will be typed before 'scroll down for more'.
 # > set this to your job title, e.g. Fullstack Developer
-typing_text: AI Systems & Full-Stack Web Developer
+typing_text: Full Stack Web & AI Developer
 # profile_image: The path to your profile image (for the About Me section)
 profile_image: /assets/img/profile.jpg
 
