@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Matt McCormick, AI & Web Developer
+title: Matt McCormick, Web & AI Developer
 email: info@mattcmccormick.com
 description: >- # this means to ignore newlines until "baseurl:"
   Full-Stack Web Developer specializing in AI-powered web interfaces.
@@ -41,7 +41,7 @@ show_aboutme_card: true
 # about_me_title: The will be displayed as the title in the About Me section
 about_me_title: About Me
 # about_me_description: This will be displayed under the title.
-about_me_description: I'm a seasoned software engineer specializing in AI-powered web interfaces & building from the ground up.
+about_me_description: I'm a seasoned software engineer specializing in AI-powered web interfaces.
 
 # SKILLS SECTION
 # show_skills_card:
