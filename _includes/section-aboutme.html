@@ -1,5 +1,8 @@
 <h1 class="title">{{site.about_me_title}}</h1>
-<p class="description" data-aos="fade-down">{{site.about_me_description}}</p>
-<div class="content">
+<p class="subtitle" data-aos="fade-down">{{site.about_me_description}}</p>
+<div class="profile-image-container" data-aos="zoom-in">
+  <img src="{{ site.profile_image | default: '/assets/img/profile.jpg' }}" alt="{{ site.title }}" class="profile-image" />
+</div>
+<div class="about-content">
   {{ site.data.about_content.content }}
 </div>

@@ -910,3 +910,56 @@ a {
     bottom: 0;
   }
 }
+
+/* About Me Section */
+
+.profile-image-container {
+  width: 200px;
+  height: 200px;
+  margin: 2rem auto;
+  position: relative;
+  border-radius: 50%;
+  padding: 0.5rem;
+  background: $bg-color;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.5),
+              -6px -6px 12px rgba(70, 70, 70, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.6),
+                -8px -8px 16px rgba(70, 70, 70, 0.25);
+                
+    .profile-image {
+      border-color: rgba($primary-color, 0.6);
+    }
+  }
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba($primary-color, 0.3);
+  transition: border-color 0.3s ease;
+}
+
+.profile-image-container::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba($primary-color, 0.1) 0%, transparent 50%, rgba($primary-color, 0.1) 100%);
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.about-content {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 85%;
+}
