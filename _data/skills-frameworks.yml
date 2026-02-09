@@ -2,7 +2,7 @@
   weight: 5
 
 - name: LangChain
-  weight: 5
+  weight: 3
 
 - name: OpenAI
   weight: 4
@@ -21,6 +21,12 @@
 
 - name: Express.js
   weight: 2
+
+- name: SvelteKit
+  weight: 4
+
+- name: Node.js
+  weight: 4
 
 - name: Vue.js
   weight: 1

@@ -1,3 +1,12 @@
+- name: AI Document Processing Pipeline
+  descr: "Built an end-to-end pipeline for parsing unstructured government solicitations, extracting and classifying requirements using LLMs, deep strategy integration, and content generation."
+  demo: https://govsignals.ai/
+  tags:
+    - tag: TypeScript
+    - tag: SvelteKit
+    - tag: LLM Integration
+    - tag: PostgreSQL
+
 - name: Choice Rolls
   descr: "Developed a fully interactive, AI-driven text-based adventure game, currently in private beta. Explored cutting-edge AI technologies, including OpenAI, vector databases, and embedding methods."
   demo: https://choicerolls.com/

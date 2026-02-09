@@ -17,7 +17,7 @@
   weight: 3
 
 - name: TypeScript
-  weight: 2
+  weight: 5
 
 - name: CoffeeScript
   weight: 2

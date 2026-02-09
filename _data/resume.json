@@ -47,11 +47,26 @@
 ],
 "experience": [
 	{
+		"position": "Full-Stack AI Engineer",
+		"company": "GovSignals",
+		"location": "Remote",
+		"start_date": "April 2025",
+		"end_date": "February 2026",
+		"description": [
+			"Built an end-to-end pipeline for extracting and classifying requirements from unstructured government solicitations using LLMs, preserving document hierarchy and providing traceability to source locations.",
+			"Migrated AI content generation from background jobs to an interactive tool-call architecture, enabling real-time user feedback during proposal drafting.",
+			"Designed database schemas for document management including file organization, requirements tracking, document versioning, and cross-entity linking.",
+			"Developed a bidirectional navigation system linking proposal sections to extracted source requirements, streamlining compliance review.",
+			"Debugged complex AI agent issues including LLM tool-call loops and distributed system failures, using session replay and observability tooling to trace root causes.",
+			"Built data ingestion pipelines for 10+ years of government awards and spending records with automated retry logic and audit trails."
+		]
+	},
+	{
 		"position": "Independent Game Developer / AI Engineer",
 		"company": "Choice Rolls",
 		"location": "New York, NY",
 		"start_date": "January 2023",
-		"end_date": "Present",
+		"end_date": "March 2025",
 		"description": [
 			"Developed a fully interactive, text-based adventure game with AI-driven mechanics, currently in private beta.",
 			"Explored cutting-edge AI technologies such as OpenAI, vector databases, and embedding methods.",
