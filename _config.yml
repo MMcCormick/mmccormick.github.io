@@ -14,10 +14,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Matt McCormick, Web & AI Developer
+title: Matt McCormick, Full-Stack & AI Engineer
 email: info@mattcmccormick.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Full Stack Web Developer specializing in AI-powered interfaces.
+  Senior full-stack engineer with deep AI and LLM integration experience. Generalist who optimizes for long-term velocity.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://mmccormick.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: mattcmccormick
@@ -29,7 +29,7 @@ github_username:  mmccormick
 username: Matt McCormick
 # typing_text: This will be typed before 'scroll down for more'.
 # > set this to your job title, e.g. Fullstack Developer
-typing_text: Full Stack Web & AI Developer
+typing_text: Full-Stack & AI Engineer
 # profile_image: The path to your profile image (for the About Me section)
 profile_image: /assets/img/profile.jpg
 
@@ -41,7 +41,7 @@ show_aboutme_card: true
 # about_me_title: The will be displayed as the title in the About Me section
 about_me_title: About Me
 # about_me_description: This will be displayed under the title.
-about_me_description: I'm a seasoned software engineer specializing in AI-powered web interfaces.
+about_me_description: Senior full-stack engineer with a generalist mindset and deep experience in AI and LLM integration at both the platform and product level.
 
 # SKILLS SECTION
 # show_skills_card:

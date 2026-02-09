@@ -1,7 +1,7 @@
 {
 "name": "Matt McCormick",
-"title": "AI & Full-stack Web Developer | Startup Veteran | Passionate about AI",
-"summary": "Full Stack Web Developer with extensive experience in startups. Excels in developing creative solutions, with a strong foundation in Ruby on Rails, JavaScript, Python, and AI technologies. Passionate about creativity and great design.",
+"title": "Senior Full-Stack Engineer | Web Applications & AI",
+"summary": "Senior full-stack engineer with over a decade of experience building web applications. Recent deep work in AI and LLM integration — extraction pipelines, interactive agent systems, and AI-powered document processing. Strong across TypeScript, Python, Ruby, PostgreSQL, and modern AI tooling.",
 "core_skills": [
 	"Artificial Intelligence",
 	"Machine Learning",
@@ -68,7 +68,7 @@
 		"start_date": "January 2023",
 		"end_date": "March 2025",
 		"description": [
-			"Developed a fully interactive, text-based adventure game with AI-driven mechanics, currently in private beta.",
+			"Developed a fully interactive, text-based adventure game with AI-driven mechanics.",
 			"Explored cutting-edge AI technologies such as OpenAI, vector databases, and embedding methods.",
 			"Implemented semantic memory using plaintext, JSON, and vectors to create deep, emergent storytelling experiences.",
 			"Demonstrated ongoing commitment to advancing technical skills and passion for blending creative writing with AI-driven gameplay.",
