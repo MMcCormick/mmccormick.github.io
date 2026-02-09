@@ -18,7 +18,7 @@
 
 - name: Video Messaging
   descr: "Designed and implemented a new video messaging feature for One Click Politics, allowing advocates to engage further with their leaders."
-  demo: https://oneclickpolitics.com/advocacy
+  demo: https://oneclickpolitics.com/advocacy-software/
   tags:
     - tag: Ruby on Rails
     - tag: Video
