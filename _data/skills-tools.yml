@@ -1,62 +1,32 @@
 - name: PostgreSQL
   weight: 5
 
-- name: Vector Databases
-  weight: 3
-
-- name: Pinecone
-  weight: 2
+- name: Cursor
+  weight: 5
 
 - name: Git
   weight: 4
 
-- name: VSCode
-  weight: 3
-
-- name: Linux/Mac/Windows
-  weight: 3
-
-- name: Docker
-  weight: 2
-
-- name: MySQL
-  weight: 2
-
-- name: MongoDB
-  weight: 1
-
-- name: Redis
-  weight: 1
-
 - name: AWS
   weight: 4
-
-- name: CI/CD
-  weight: 3
-
-- name: Heroku
-  weight: 2
-
-- name: GraphQL
-  weight: 1
-
-- name: Kubernetes
-  weight: 1
-
-- name: Cursor
-  weight: 5
 
 - name: Claude Code
   weight: 4
 
-- name: Trigger.dev
-  weight: 3
-
 - name: Supabase
   weight: 3
 
-- name: PostgREST
-  weight: 2
+- name: Vector Databases
+  weight: 3
+
+- name: CI/CD
+  weight: 3
+
+- name: Trigger.dev
+  weight: 3
 
 - name: Linear
-  weight: 3 
+  weight: 3
+
+- name: Docker
+  weight: 2

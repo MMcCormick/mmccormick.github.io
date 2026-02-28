@@ -29,7 +29,7 @@ github_username:  mmccormick
 username: Matt McCormick
 # typing_text: This will be typed before 'scroll down for more'.
 # > set this to your job title, e.g. Fullstack Developer
-typing_text: Full Stack Web & AI Developer
+typing_text: Full-Stack Engineer & AI Developer
 # profile_image: The path to your profile image (for the About Me section)
 profile_image: /assets/img/profile.jpg
 
@@ -41,7 +41,7 @@ show_aboutme_card: true
 # about_me_title: The will be displayed as the title in the About Me section
 about_me_title: About Me
 # about_me_description: This will be displayed under the title.
-about_me_description: I'm a senior full-stack engineer with deep experience building AI-powered web applications.
+about_me_description: I'm a full-stack engineer who's been building real LLM-powered systems since early 2023 — government document pipelines, AI agents, and generative narrative games.
 
 # SKILLS SECTION
 # show_skills_card:
