@@ -18,7 +18,6 @@
     - tag: Python
     - tag: OpenAI
     - tag: LangChain
-    - tag: Pinecone
     - tag: Vector Databases
 
 - title: One Click Politics
