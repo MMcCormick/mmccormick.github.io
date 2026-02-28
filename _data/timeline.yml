@@ -1,6 +1,17 @@
+- title: GovSignals
+  title-url: https://govsignals.ai/
+  date: Apr 2025 - Feb 2026
+  subtitle: Full-Stack AI Engineer
+  timeline-side: right
+  tags:
+    - tag: TypeScript
+    - tag: SvelteKit
+    - tag: LLM Integration
+    - tag: PostgreSQL
+
 - title: Choice Rolls
   title-url: https://choicerolls.com/
-  date: Jan 2023 - Present
+  date: Jan 2023 - Mar 2025
   subtitle: Independent Game Developer / AI Engineer
   timeline-side: left
   tags:
