@@ -29,8 +29,7 @@ GEM
       faraday-net_http (>= 2.0, < 3.1)
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (3.0.2)
-    ffi (1.17.3-x64-mingw-ucrt)
-    ffi (1.17.3-x86_64-linux-gnu)
+    ffi (1.17.3)
     forwardable-extended (2.6.0)
     gemoji (3.0.1)
     github-pages (228)
@@ -254,7 +253,6 @@ GEM
     unf_ext (0.0.9.1)
     unf_ext (0.0.9.1-x64-mingw-ucrt)
     unicode-display_width (1.8.0)
-    wdm (0.2.0)
     webrick (1.9.1)
 
 PLATFORMS
@@ -267,7 +265,6 @@ DEPENDENCIES
   jekyll
   jekyll-data
   jekyll-github-metadata
-  wdm (>= 0.1.0)
   webrick
 
 BUNDLED WITH

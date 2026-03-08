@@ -121,6 +121,12 @@ google_analytics: G-JQ232L7CYC
 
 contact_email: contact@mattcmccormick.com
 
+# AI CHAT WIDGET
+# Set this to your Cloudflare Worker URL after deployment.
+# Leave blank to disable the chat widget.
+# chat_worker_url: https://matt-portfolio-chat.YOUR_SUBDOMAIN.workers.dev
+chat_worker_url: https://matt-portfolio-chat.mattcmccormick.workers.dev
+
 # Build settings
 plugins:
   - jekyll-feed
