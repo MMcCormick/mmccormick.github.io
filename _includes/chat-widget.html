@@ -195,6 +195,9 @@
   #chat-send:hover { transform: scale(1.08); }
   #chat-send:disabled { opacity: 0.4; cursor: default; transform: none; }
   #chat-send svg { width: 1rem; height: 1rem; fill: #fff; }
+  .chat-msg ul { margin: 0.25rem 0 0; padding-left: 1.1rem; }
+  .chat-msg li { margin-bottom: 0.2rem; }
+  .chat-msg strong { color: #fff; font-weight: 600; }
 </style>
 
 <button id="chat-fab" aria-label="Chat with Matt's AI assistant" title="Ask me about Matt">
@@ -255,10 +258,34 @@
     }
   }
 
+  function renderMarkdown(text) {
+    // Escape HTML first
+    var escaped = text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    // Bold
+    escaped = escaped.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+    // Bullet lists: collect consecutive "- item" lines into <ul>
+    escaped = escaped.replace(/((?:^|\n)- .+)+/g, function(block) {
+      var items = block.trim().split('\n').map(function(line) {
+        return '<li>' + line.replace(/^- /, '') + '</li>';
+      }).join('');
+      return '<ul>' + items + '</ul>';
+    });
+    // Line breaks (outside of block elements)
+    escaped = escaped.replace(/\n/g, '<br>');
+    // Clean up <br> inside <ul>
+    escaped = escaped.replace(/<br>(<\/?[uo]l>|<li>)/g, '$1');
+    escaped = escaped.replace(/(<\/li>)<br>/g, '$1');
+    return escaped;
+  }
+
   function appendMessage(role, text) {
     var div = document.createElement('div');
     div.className = 'chat-msg ' + role;
-    div.textContent = text;
+    if (role === 'assistant') {
+      div.innerHTML = renderMarkdown(text);
+    } else {
+      div.textContent = text;
+    }
     messagesEl.appendChild(div);
     messagesEl.scrollTop = messagesEl.scrollHeight;
     return div;
