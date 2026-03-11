@@ -1,7 +1,7 @@
 {
 "name": "Matt McCormick",
 "title": "Senior Full-Stack Engineer | Web Applications & AI",
-"summary": "Senior full-stack engineer with over a decade of experience building web applications. Recent deep work in AI and LLM integration — extraction pipelines, interactive agent systems, and AI-powered document processing. Strong across TypeScript, Python, Ruby, PostgreSQL, and modern AI tooling.",
+"summary": "Founding engineer and senior full-stack developer with 10+ years designing and building complex web platforms and AI-driven systems. Recent work focuses on LLM-powered document analysis, extraction pipelines, and interactive agent architectures. Experienced across TypeScript, Python, Ruby, and PostgreSQL, with a focus on system architecture, data pipelines, and AI-enabled products.",
 "core_skills": [
 	"Python",
 	"Ruby",
@@ -27,11 +27,11 @@
 		"start_date": "April 2025",
 		"end_date": "February 2026",
 		"description": [
-			"Built an end-to-end requirements extraction pipeline for government solicitations using LLMs, with document hierarchy preservation and source traceability.",
-			"Migrated AI content generation from background jobs to an interactive tool-call architecture with real-time user feedback.",
-			"Designed schemas for document management, requirements tracking, and versioning across the platform.",
-			"Debugged complex AI agent issues including LLM tool-call loops and distributed system failures using session replay and observability tooling.",
-			"Built data ingestion pipelines for 10+ years of government awards and spending records."
+			"Built an end-to-end LLM pipeline extracting requirements from government solicitations with traceable document hierarchy.",
+			"Migrated AI content generation from background jobs to interactive tool-call workflows with real-time feedback.",
+			"Designed core data models and schemas for document management, requirements tracking, and versioning.",
+			"Diagnosed and resolved complex AI agent failures including tool-call loops and distributed system issues.",
+			"Built ingestion pipelines processing 10+ years of federal contract award and spending data."
 		]
 	},
 	{

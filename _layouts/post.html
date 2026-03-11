@@ -86,12 +86,15 @@
       border-top: 1px solid #eee;
     }
     
-    .back-home {
-      display: block;
-      text-align: center;
-      margin-top: 2rem;
+    /* Fix preloader gap — base uses position:absolute with margin:0.5rem which
+       leaves an uncovered strip at the top when the blog-nav is the first element */
+    #preloader {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      margin: 0;
     }
-    
+
     /* Responsive adjustments */
     @media (max-width: 768px) {
       .post-title {
@@ -122,11 +125,8 @@
     </div>
   </div>
   
-  <!-- Mini header with home link -->
-  <div class="mini-header neumorphism-card" style="padding: 1rem; margin: 1rem; text-align: center;">
-    <a href="{{ site.baseurl }}/" class="highlight-link">{{ site.title }}</a>
-  </div>
-  
+  {% include blog-nav.html post=true %}
+
   <div class="layout">
     <section class="card neumorphism-card-big">
       <div class="post-container" style="padding: 2rem;">
@@ -161,7 +161,6 @@
           {% endif %}
         </div>
         
-        <a href="{{ site.baseurl }}/" class="highlight-link back-home">← Back to Home</a>
       </div>
     </section>
   </div>

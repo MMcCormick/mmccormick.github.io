@@ -1,0 +1,38 @@
+<style>
+  .blog-nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.4rem 0.6rem;
+    padding: 0.85rem 1.5rem;
+    margin: 1rem;
+    background: linear-gradient(145deg, rgba(100,100,105,0.15) 15%, rgba(33,33,33,0.4) 80%);
+    border-radius: 1rem;
+    box-shadow: -4px -3px 4px 0 rgba(250,250,250,0.08), 4px 4px 4px 0 rgba(0,0,0,0.4);
+    font-family: "Raleway", sans-serif;
+    font-size: 0.85rem;
+  }
+  .blog-nav .nav-sep {
+    color: rgba(255,255,255,0.25);
+    font-size: 0.75rem;
+  }
+  .blog-nav .nav-current {
+    color: rgba(255,255,255,0.55);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 60vw;
+  }
+</style>
+
+<nav class="blog-nav">
+  <a href="{{ site.baseurl }}/" class="highlight-link">{{ site.username }}</a>
+  <span class="nav-sep">›</span>
+  {% if include.post %}
+    <a href="{{ site.baseurl }}/posts/" class="highlight-link">Posts</a>
+    <span class="nav-sep">›</span>
+    <span class="nav-current">{{ page.title }}</span>
+  {% else %}
+    <span class="nav-current">Posts</span>
+  {% endif %}
+</nav>
