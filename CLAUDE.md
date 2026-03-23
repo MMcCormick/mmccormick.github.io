@@ -2,9 +2,14 @@
 
 ## Project Overview
 
-Matt McCormick's personal portfolio site. Jekyll static site with a Neumorphism dark theme, hosted on GitHub Pages at **mattcmccormick.com**.
+Matt McCormick's personal portfolio site and long-term hub for all projects.
+Jekyll static site with a Neumorphism dark theme, hosted on GitHub Pages at **mattcmccormick.com**.
 
 Stack: Jekyll 3.9, SCSS, vanilla JS, Gulp build pipeline, Cloudflare Worker (AI chat).
+
+**Site purpose:** Personal brand + "things you can try." One place that accumulates traffic
+and contact info over time as multiple projects reach playable state. Studio naming is
+deferred until something gets traction.
 
 ---
 
@@ -16,7 +21,6 @@ feature/branch  →  PR into main  →  PR main into production  →  live at ma
 
 - **`production`** — deploys to GitHub Pages (mattcmccormick.com). Never commit directly.
 - **`main`** — integration branch. PRs go here first for review.
-- **`assistant`** — current WIP branch for the AI chat widget feature.
 - Feature branches should be short-lived and named descriptively (e.g. `update-resume`, `fix-timeline-layout`).
 
 ### Git Rules
@@ -120,3 +124,38 @@ All content is data-driven — edit the files in `_data/` rather than HTML:
 - Site title, social links, section toggles → `_config.yml`
 
 After updating `_data/resume.json` or other data files, also update the system prompt in `worker/index.js` so the AI assistant stays in sync.
+
+---
+
+## Playable Projects
+
+A key goal for this site is a "things you can try" section — honest alpha/beta labels,
+one-line description, direct link. Don't add a project until someone other than Matt
+can actually use it. Don't over-design it — a simple grid is fine.
+
+### Already live / shareable
+- **Choice Rolls** (choicerolls.com) — AI text adventure with tabletop RPG mechanics (airpg repo).
+  Already linked from the portfolio. Keep it prominent.
+- **remental-inc** — shareable game, needs content before it's worth driving traffic to.
+- **collapse** — shareable game, worth linking now.
+- **key-agent** / **key-hunter** — small shareable tools; lower priority but ready.
+
+### Coming next
+- **dm-assistant** — AI-powered D&D reference card tool (voice input, auto-surfaced cards).
+  Deploying to Vercel once API key handling is flipped to client-side (localStorage).
+  Label: "alpha."
+
+### Playable but not yet public
+- **job-ops** — email/job tracking tool, Core: yes. Deciding between product and OSS.
+  Strong non-game candidate once direction is clearer.
+- **blades** — game, Core: yes. Polish pass needed.
+- **chat-hacker** — game, Core: yes, currently broken. Fix the blocker first.
+
+### On the roadmap (not linkable yet)
+- **terminal-dancer** — cyberpunk dark net game. CLI-only; needs web port.
+- **simperium** — Roman life sim. Terminal-only for now, longer road to web.
+
+### What not to do
+- Don't create a separate studio site until something has return visitors.
+- Don't add a project link until someone other than Matt can actually use it.
+- Don't rename or rebrand Choice Rolls on this site — it's established enough to keep as-is.
