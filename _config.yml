@@ -80,6 +80,13 @@ show_os_projects: true
 # os_projects_title: The will be displayed as the title of your open source projects
 os_projects_title: Open Source Contributions
 
+# PLAYABLE SECTION
+# show_playable_card:
+# > setting this to true, will display the "Things You Can Try" section
+show_playable_card: false
+# playable_title: The title displayed for this section
+playable_title: Things You Can Try
+
 # CONTACT SECTION
 # show_contact_card:
 # > setting this to true, will display the Contact section

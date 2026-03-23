@@ -1,0 +1,4 @@
+- name: Choice Rolls
+  label: beta
+  descr: "AI-driven text adventure with tabletop RPG mechanics. Roll dice, make choices, shape the story."
+  url: https://choicerolls.com/
