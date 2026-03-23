@@ -133,17 +133,24 @@ A key goal for this site is a "things you can try" section — honest alpha/beta
 one-line description, direct link. Don't add a project until someone other than Matt
 can actually use it. Don't over-design it — a simple grid is fine.
 
+### "Things You Can Try" section
+Built and wired in (`_includes/section-playable.html`, `_data/playable.yml`).
+Currently toggled **off** (`show_playable_card: false` in `_config.yml`).
+
+**Flip it on when dm-assistant is live.** One entry reads as a hobby; two reads as a pattern.
+The goal is a site worth sharing — live, observable projects drive that.
+
 ### Already live / shareable
-- **Choice Rolls** (choicerolls.com) — AI text adventure with tabletop RPG mechanics (airpg repo).
-  Already linked from the portfolio. Keep it prominent.
+- **Choice Rolls** (choicerolls.com) — AI text adventure with tabletop RPG mechanics.
+  In `playable.yml`, will show when section is enabled.
 - **remental-inc** — shareable game, needs content before it's worth driving traffic to.
-- **collapse** — shareable game, worth linking now.
+- **collapse** — playable but not well-designed enough to drive traffic to yet.
 - **key-agent** / **key-hunter** — small shareable tools; lower priority but ready.
 
-### Coming next
+### Coming next (will trigger enabling the section)
 - **dm-assistant** — AI-powered D&D reference card tool (voice input, auto-surfaced cards).
   Deploying to Vercel once API key handling is flipped to client-side (localStorage).
-  Label: "alpha."
+  Label: "alpha." Add to `playable.yml` when live, then set `show_playable_card: true`.
 
 ### Playable but not yet public
 - **job-ops** — email/job tracking tool, Core: yes. Deciding between product and OSS.

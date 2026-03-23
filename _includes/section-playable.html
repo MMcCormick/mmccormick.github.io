@@ -1,0 +1,17 @@
+<h1 class="title"><span>{{ site.playable_title }}</span></h1>
+<div class="projects-wrapper">
+  {% for item in site.data.playable %}
+    <div class="project neumorphism-card" data-aos="zoom-in-down">
+      <div class="name-link-wrapper">
+        <h3>{{ item.name }}</h3>
+        {% if item.label %}
+          <span class="playable-label">{{ item.label }}</span>
+        {% endif %}
+      </div>
+      <p class="project-desc">{{ item.descr }}</p>
+      <a class="playable-cta" href="{{ item.url }}" target="_blank" rel="noreferrer">
+        Play Now &rarr;
+      </a>
+    </div>
+  {% endfor %}
+</div>

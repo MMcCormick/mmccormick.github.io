@@ -597,6 +597,64 @@ a {
   padding: 0.5rem;
 }
 
+/* Playable Section */
+
+.playable-item {
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.5rem;
+}
+
+.playable-header {
+  align-items: center;
+  display: flex;
+  gap: 0.75rem;
+
+  h3 {
+    margin: 0;
+  }
+}
+
+.playable-label {
+  align-self: center;
+  background: rgba($primary-color, 0.15);
+  border: 1px solid rgba($primary-color, 0.4);
+  border-radius: 0.4rem;
+  color: $primary-color;
+  font-size: 0.7rem;
+  font-weight: $font-weight-strong;
+  letter-spacing: 0.05rem;
+  padding: 0.2rem 0.5rem;
+  text-transform: uppercase;
+}
+
+.playable-desc {
+  color: rgba($text-color, 0.8);
+  line-height: 1.4rem;
+  margin: 0;
+}
+
+.playable-cta {
+  align-self: flex-start;
+  border: 1px solid $primary-color;
+  border-radius: 0.5rem;
+  color: $primary-color;
+  display: inline-block;
+  font-weight: $font-weight-strong;
+  letter-spacing: 0.05rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.25rem;
+  padding: 0.6rem 1.25rem;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background: $primary-color;
+    color: $bg-color;
+  }
+}
+
 /* Contact Card */
 
 .contact-icons {
@@ -822,6 +880,15 @@ a {
     }
   }
 
+  .playable-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    > * {
+      width: 44%;
+    }
+  }
+
   .contact-icons .social-link {
     width: 4rem;
     height: 4rem;
@@ -865,6 +932,12 @@ a {
       width: 45%;
     }
   }
+
+  .playable-grid {
+    > * {
+      width: 45%;
+    }
+  }
 }
 
 @media only screen and (min-width: $large-screen) {
@@ -891,6 +964,12 @@ a {
   }
 
   .projects-wrapper {
+    > * {
+      width: 46%;
+    }
+  }
+
+  .playable-grid {
     > * {
       width: 46%;
     }
