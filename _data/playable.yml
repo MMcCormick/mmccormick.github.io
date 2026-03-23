@@ -2,3 +2,8 @@
   label: beta
   descr: "AI-driven text adventure with tabletop RPG mechanics. Roll dice, make choices, shape the story."
   url: https://choicerolls.com/
+
+- name: DM Assistant
+  label: alpha
+  descr: "AI-powered D&D reference tool. Ask a rules question, get an instant card — voice input supported."
+  url: https://dm-assistant-psi.vercel.app/

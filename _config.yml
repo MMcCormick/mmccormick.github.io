@@ -83,7 +83,7 @@ os_projects_title: Open Source Contributions
 # PLAYABLE SECTION
 # show_playable_card:
 # > setting this to true, will display the "Things You Can Try" section
-show_playable_card: false
+show_playable_card: true
 # playable_title: The title displayed for this section
 playable_title: Things You Can Try
 
