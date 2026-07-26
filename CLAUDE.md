@@ -178,11 +178,14 @@ compiled and committed alongside it (see the broken `npm run prod` note above).
   In `playable.yml`, label "beta."
 - **dm-assistant** (dm-assistant-psi.vercel.app) — AI-powered D&D reference card tool
   (voice input, auto-surfaced cards). In `playable.yml`, label "alpha."
-- **remental-inc** — next one up, but **not deployed anywhere yet**. Tracker has
-  `Publish: yes` with an empty `Live:`, so the export rule correctly excludes it.
-  It is deploy-ready (SvelteKit on `adapter-auto`, no blockers), so `vercel --prod`
-  from the repo should be all it takes. Put the resulting url in the tracker's
-  `Live` field, not directly in `playable.yml`, then re-export.
+- **remental-inc** — **not deployed**, and deploying it is not a one-liner. Confirmed
+  2026-07-26: `has_pages: false`, `homepage: null`, zero deployments, repo private.
+  Tracker has `Publish: yes` with an empty `Live:`, so the export rule correctly
+  excludes it. Gotcha for whenever this is picked up: the actual game lives on the
+  **`tynan`** branch; the default branch `main` is 7 commits behind and dates to
+  2025-06-24, so a stock Vercel connection would build the stale branch. `tynan` is a
+  clean fast-forward from `main`, but whether it is the branch to ship is undecided.
+  Not a priority: other projects are closer to live.
 - **collapse** — playable but not well-designed enough to drive traffic to yet.
 - **key-agent** / **key-hunter** — small shareable tools; lower priority but ready.
 
