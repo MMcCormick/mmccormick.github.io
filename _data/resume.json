@@ -39,11 +39,11 @@
 		"company": "Choice Rolls",
 		"location": "New York, NY",
 		"start_date": "January 2023",
-		"end_date": "March 2025",
+		"end_date": "Present",
 		"description": [
-			"Developed a fully interactive, text-based adventure game with AI-driven mechanics.",
-			"Explored cutting-edge AI technologies such as OpenAI, vector databases, and embedding methods.",
-			"Implemented semantic memory using plaintext, JSON, and vectors to create deep, emergent storytelling experiences.",
+			"Built and operate a live, playable text-based adventure game with AI-driven mechanics.",
+			"Implemented semantic memory using OpenAI embeddings and cosine similarity for emergent, long-term story consequences.",
+			"Migrated production hosting to cut infrastructure cost by ~80% while keeping the app live, including a real-time WebSocket architecture and pluggable email delivery.",
 			"Demonstrated ongoing commitment to advancing technical skills and passion for blending creative writing with AI-driven gameplay."
 		]
 	},
@@ -164,17 +164,18 @@
 		"name": "Choice Rolls",
 		"startDate": "January 2023",
 		"endDate": "Present",
-		"summary": "Developed a fully interactive, AI-driven text-based adventure game, currently in private beta.",
+		"summary": "Built and operate a live, playable AI-driven text adventure game with tabletop RPG mechanics.",
 		"highlights": [
-			"Explored cutting-edge AI technologies, including OpenAI, vector databases, and embedding methods.",
-			"Implemented semantic memory using plaintext, JSON, and vectors to create deep, emergent storytelling experiences.",
+			"Implemented semantic memory using OpenAI embeddings and cosine similarity for emergent, long-term story consequences.",
+			"Migrated production hosting to cut infrastructure cost by ~80% while keeping the app live, including a real-time WebSocket architecture and pluggable email delivery.",
 			"Demonstrated passion for blending creative writing with AI-driven gameplay."
 		],
 		"technologies": [
 			"Python",
-			"LangChain",
+			"Flask",
 			"OpenAI",
-			"Vector Databases"
+			"Embeddings / Semantic Search",
+			"WebSockets"
 		],
 		"notes": "Demonstrations available upon request. Private GitHub repositories available upon written agreement.",
 		"url": "https://choicerolls.com/"

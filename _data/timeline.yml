@@ -11,14 +11,15 @@
 
 - title: Choice Rolls
   title-url: https://choicerolls.com/
-  date: Jan 2023 - Mar 2025
+  date: Jan 2023 - Present
   subtitle: Independent Game Developer / AI Engineer
   timeline-side: left
   tags:
     - tag: Python
+    - tag: Flask
     - tag: OpenAI
-    - tag: LangChain
-    - tag: Vector Databases
+    - tag: Embeddings / Semantic Search
+    - tag: WebSockets
 
 - title: One Click Politics
   title-url: https://oneclickpolitics.com/

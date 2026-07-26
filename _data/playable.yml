@@ -7,7 +7,7 @@
 
 - name: Choice Rolls
   phase: building
-  label: beta
+  label: live
   tagline: "AI-driven text adventure with tabletop RPG mechanics. Roll dice, make choices, shape the story."
   url: https://choicerolls.com/
   last_updated: 2026-03-03
