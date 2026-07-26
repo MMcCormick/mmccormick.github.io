@@ -35,11 +35,11 @@ Matt has well over a decade of experience creating production-grade software. He
 - Built data ingestion pipelines for 10+ years of government awards and spending records.
 - Stack: TypeScript, SvelteKit, PostgreSQL, LLM Integration
 
-**Independent Game Developer / AI Engineer — Choice Rolls** (January 2023 – March 2025, New York, NY)
-- Developed a fully interactive, text-based adventure game with AI-driven mechanics (currently in private beta).
-- Explored cutting-edge AI technologies including OpenAI, vector databases, and embedding methods.
-- Implemented semantic memory using plaintext, JSON, and vectors for emergent storytelling.
-- Stack: Python, OpenAI, LangChain, Vector Databases
+**Independent Game Developer / AI Engineer — Choice Rolls** (January 2023 – Present, New York, NY)
+- Built and operate a live, playable text-based adventure game with AI-driven mechanics.
+- Implemented semantic memory using OpenAI embeddings and cosine similarity for emergent, long-term story consequences.
+- Migrated production hosting to cut infrastructure cost by ~80% while keeping the app live, including a real-time WebSocket architecture and pluggable email delivery.
+- Stack: Python, Flask, OpenAI, Embeddings / Semantic Search, WebSockets
 
 **Acting CTO — One Click Politics** (June 2020 – January 2021, New York, NY)
 - Led hiring during COVID-19, overseeing a seamless back-end team transition.
@@ -90,7 +90,7 @@ Matt has well over a decade of experience creating production-grade software. He
 
 **AI Document Processing Pipeline** — Built an end-to-end pipeline for parsing unstructured government solicitations, extracting and classifying requirements using LLMs, with deep strategy integration and content generation. (GovSignals, govsignals.ai)
 
-**Choice Rolls** — Fully interactive, AI-driven text-based adventure game. Implemented semantic memory using vectors and embeddings for emergent storytelling. Private beta. (choicerolls.com)
+**Choice Rolls** — Live, playable AI-driven text-based adventure game. Implemented semantic memory using vectors and embeddings for emergent storytelling; migrated production hosting to cut cost by ~80%. (choicerolls.com)
 
 **Legislative Databases** — Built a 'Legislator Search' feature from public datasets for One Click Politics. Contributed to the open-source unitedstates/congress-legislators project. Completed in under a month.
 
