@@ -1,0 +1,20 @@
+# Generated from project-tracker README. Edit the tracker, not this file.
+# Export script: scripts/export-playable.py (coming soon)
+#
+# phase / last_updated are provenance from the tracker and are not rendered.
+# Omit url until someone other than Matt can actually use the project;
+# the card then renders without a call to action.
+
+- name: Choice Rolls
+  phase: building
+  label: beta
+  tagline: "AI-driven text adventure with tabletop RPG mechanics. Roll dice, make choices, shape the story."
+  url: https://choicerolls.com/
+  last_updated: 2026-03-03
+
+- name: DM Assistant
+  phase: building
+  label: alpha
+  tagline: "AI-powered D&D reference tool. Ask a rules question, get an instant card — voice input supported."
+  url: https://dm-assistant-psi.vercel.app/
+  last_updated: 2026-03-23

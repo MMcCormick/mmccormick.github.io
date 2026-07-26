@@ -42,12 +42,17 @@ npm install
 
 # Start local dev server at http://localhost:4000
 npm run dev
-
-# Production build
-npm run prod
 ```
 
 The Gulp pipeline compiles SCSS → `assets/css/main.min.css`, concatenates JS → `assets/js/app.min.js`, and runs Jekyll with incremental builds + BrowserSync.
+
+**`npm run prod` is currently broken** — it calls `gulp build`, but `gulpfile.js` only
+registers a `default` task, so it exits with "Task never defined: build". `default` is
+watch + serve, so there is no one-shot build command. To regenerate the committed
+`assets/css/*.min.css` and `assets/js/*.min.js` artifacts today you have to run
+`npm run dev` and stop it once compilation finishes. Worth fixing by exporting a real
+`build` task; note the `jekyll` task hardcodes `--config=_config.yml,_config_dev.yml`,
+so a genuine production build needs a variant without the dev override.
 
 Note: `_config_dev.yml` overrides are applied locally. It disables `show_os_projects` to avoid needing a GitHub API token in development.
 
@@ -133,17 +138,56 @@ A key goal for this site is a "things you can try" section — honest alpha/beta
 one-line description, direct link. Don't add a project until someone other than Matt
 can actually use it. Don't over-design it — a simple grid is fine.
 
-### Already live / shareable
-- **Choice Rolls** (choicerolls.com) — AI text adventure with tabletop RPG mechanics (airpg repo).
-  Already linked from the portfolio. Keep it prominent.
-- **remental-inc** — shareable game, needs content before it's worth driving traffic to.
-- **collapse** — shareable game, worth linking now.
-- **key-agent** / **key-hunter** — small shareable tools; lower priority but ready.
+### "Things You Can Try" section
+Built, wired in, and **live** (`show_playable_card: true` in `_config.yml`).
 
-### Coming next
-- **dm-assistant** — AI-powered D&D reference card tool (voice input, auto-surfaced cards).
-  Deploying to Vercel once API key handling is flipped to client-side (localStorage).
-  Label: "alpha."
+- `_data/playable.yml` holds the entries. **The project-tracker README is the source
+  of truth**, not this file. Live urls belong in the tracker's `Live` field; this file
+  is an export of it.
+- `_includes/section-playable.html` renders it. The CTA ("Try It") only renders when
+  `url` is set, so an entry with no url shows as a card with no link.
+
+**Export rule.** A tracker entry appears here only when it has **both** `Publish: yes`
+**and** a non-empty `Live:` url. `Publish: yes` alone is intent, not availability, and
+publishing a card nobody can click breaks the "don't add it until someone else can use
+it" rule above. Field mapping:
+
+| `playable.yml` | project-tracker |
+|---|---|
+| `name` | `Title` if set, else the `###` heading (e.g. `airpg` → "Choice Rolls") |
+| `phase` | `Phase` (derived from Core + Share; provenance only, not rendered) |
+| `tagline` | `Tagline` |
+| `url` | `Live` |
+| `last_updated` | `Last Updated` (provenance only, not rendered) |
+| `label` | **no tracker source** |
+
+`label` is the one editorial field: the alpha/beta/live badge is a judgment call about
+how much polish to promise, so it is hand-set here and an export must preserve existing
+values rather than overwrite them. Note it does not track `phase`, and shouldn't:
+Choice Rolls is `phase: building` but labeled "beta".
+- Styles live under `/* Playable Section */` in `_sass/main.scss`: `.playable-grid`,
+  `.playable-item`, `.playable-header`, `.playable-label`, `.playable-desc`,
+  `.playable-cta`. The grid mirrors `.projects-wrapper` responsive behavior (stacked
+  on mobile, 44/45/46% two-up at each breakpoint).
+
+`assets/css/main.min.css` is a committed build artifact, so any SCSS change has to be
+compiled and committed alongside it (see the broken `npm run prod` note above).
+
+### Already live / shareable
+- **Choice Rolls** (choicerolls.com) — AI text adventure with tabletop RPG mechanics.
+  In `playable.yml`, label "beta."
+- **dm-assistant** (dm-assistant-psi.vercel.app) — AI-powered D&D reference card tool
+  (voice input, auto-surfaced cards). In `playable.yml`, label "alpha."
+- **remental-inc** — **not deployed**, and deploying it is not a one-liner. Confirmed
+  2026-07-26: `has_pages: false`, `homepage: null`, zero deployments, repo private.
+  Tracker has `Publish: yes` with an empty `Live:`, so the export rule correctly
+  excludes it. Gotcha for whenever this is picked up: the actual game lives on the
+  **`tynan`** branch; the default branch `main` is 7 commits behind and dates to
+  2025-06-24, so a stock Vercel connection would build the stale branch. `tynan` is a
+  clean fast-forward from `main`, but whether it is the branch to ship is undecided.
+  Not a priority: other projects are closer to live.
+- **collapse** — playable but not well-designed enough to drive traffic to yet.
+- **key-agent** / **key-hunter** — small shareable tools; lower priority but ready.
 
 ### Playable but not yet public
 - **job-ops** — email/job tracking tool, Core: yes. Deciding between product and OSS.

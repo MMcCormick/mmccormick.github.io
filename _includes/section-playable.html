@@ -1,0 +1,19 @@
+<h1 class="title"><span>{{ site.playable_title }}</span></h1>
+<div class="playable-grid">
+  {% for item in site.data.playable %}
+    <div class="playable-item neumorphism-card" data-aos="zoom-in-down">
+      <div class="playable-header">
+        <h3>{{ item.name }}</h3>
+        {% if item.label %}
+          <span class="playable-label">{{ item.label }}</span>
+        {% endif %}
+      </div>
+      <p class="playable-desc">{{ item.tagline }}</p>
+      {% if item.url and item.url != "" %}
+        <a class="playable-cta" href="{{ item.url }}" target="_blank" rel="noreferrer">
+          Try It &rarr;
+        </a>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>

@@ -1,7 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "Bash(git add:*)",
+      "Bash(cd ~/projects/remental-inc; echo \"=== svelte.config.js ===\"; cat svelte.config.js; echo \"=== adapters in package.json ===\"; grep -n \"adapter\\\\|\\\\\"scripts\\\\\"\" -A 10 package.json | head -30)",
+      "Read(//home/mattunix/projects/remental-inc/**)"
     ]
   }
 }
