@@ -42,12 +42,17 @@ npm install
 
 # Start local dev server at http://localhost:4000
 npm run dev
-
-# Production build
-npm run prod
 ```
 
 The Gulp pipeline compiles SCSS → `assets/css/main.min.css`, concatenates JS → `assets/js/app.min.js`, and runs Jekyll with incremental builds + BrowserSync.
+
+**`npm run prod` is currently broken** — it calls `gulp build`, but `gulpfile.js` only
+registers a `default` task, so it exits with "Task never defined: build". `default` is
+watch + serve, so there is no one-shot build command. To regenerate the committed
+`assets/css/*.min.css` and `assets/js/*.min.js` artifacts today you have to run
+`npm run dev` and stop it once compilation finishes. Worth fixing by exporting a real
+`build` task; note the `jekyll` task hardcodes `--config=_config.yml,_config_dev.yml`,
+so a genuine production build needs a variant without the dev override.
 
 Note: `_config_dev.yml` overrides are applied locally. It disables `show_os_projects` to avoid needing a GitHub API token in development.
 
@@ -136,27 +141,48 @@ can actually use it. Don't over-design it — a simple grid is fine.
 ### "Things You Can Try" section
 Built, wired in, and **live** (`show_playable_card: true` in `_config.yml`).
 
-- `_data/playable.yml` holds the entries. Schema: `name`, `phase`, `label`, `tagline`,
-  `url`, `last_updated`. It is derived from the project-tracker README, so treat the
-  tracker as the source of truth. `phase` and `last_updated` are provenance only and
-  are not rendered.
+- `_data/playable.yml` holds the entries. **The project-tracker README is the source
+  of truth**, not this file. Live urls belong in the tracker's `Live` field; this file
+  is an export of it.
 - `_includes/section-playable.html` renders it. The CTA ("Try It") only renders when
   `url` is set, so an entry with no url shows as a card with no link.
+
+**Export rule.** A tracker entry appears here only when it has **both** `Publish: yes`
+**and** a non-empty `Live:` url. `Publish: yes` alone is intent, not availability, and
+publishing a card nobody can click breaks the "don't add it until someone else can use
+it" rule above. Field mapping:
+
+| `playable.yml` | project-tracker |
+|---|---|
+| `name` | `Title` if set, else the `###` heading (e.g. `airpg` → "Choice Rolls") |
+| `phase` | `Phase` (derived from Core + Share; provenance only, not rendered) |
+| `tagline` | `Tagline` |
+| `url` | `Live` |
+| `last_updated` | `Last Updated` (provenance only, not rendered) |
+| `label` | **no tracker source** |
+
+`label` is the one editorial field: the alpha/beta/live badge is a judgment call about
+how much polish to promise, so it is hand-set here and an export must preserve existing
+values rather than overwrite them. Note it does not track `phase`, and shouldn't:
+Choice Rolls is `phase: building` but labeled "beta".
 - Styles live under `/* Playable Section */` in `_sass/main.scss`: `.playable-grid`,
   `.playable-item`, `.playable-header`, `.playable-label`, `.playable-desc`,
   `.playable-cta`. The grid mirrors `.projects-wrapper` responsive behavior (stacked
   on mobile, 44/45/46% two-up at each breakpoint).
 
-`assets/css/main.min.css` is a committed build artifact. After touching the SCSS,
-run `npm run prod` and commit the rebuilt CSS.
+`assets/css/main.min.css` is a committed build artifact, so any SCSS change has to be
+compiled and committed alongside it (see the broken `npm run prod` note above).
 
 ### Already live / shareable
 - **Choice Rolls** (choicerolls.com) — AI text adventure with tabletop RPG mechanics.
   In `playable.yml`, label "beta."
 - **dm-assistant** (dm-assistant-psi.vercel.app) — AI-powered D&D reference card tool
   (voice input, auto-surfaced cards). In `playable.yml`, label "alpha."
-- **remental-inc** — shareable game, being added to `playable.yml` next; needs its
-  public url confirmed.
+- **remental-inc** — next one up, but **not deployed anywhere yet**. Tracker has
+  `Publish: yes` with an empty `Live:`, so the export rule correctly excludes it.
+  It is deploy-ready (SvelteKit on `adapter-auto`, no blockers), so `vercel --prod`
+  from the repo should be all it takes. Put the resulting url in the tracker's
+  `Live` field, not directly in `playable.yml`, then re-export.
 - **collapse** — playable but not well-designed enough to drive traffic to yet.
 - **key-agent** / **key-hunter** — small shareable tools; lower priority but ready.
 
