@@ -8,13 +8,15 @@
     - tag: PostgreSQL
 
 - name: Choice Rolls
-  descr: "Developed a fully interactive, AI-driven text-based adventure game, currently in private beta. Explored cutting-edge AI technologies, including OpenAI, vector databases, and embedding methods."
+  descr: "Built and operate a live, playable AI-driven text adventure: a dice-resolution engine, embedding-matched long-term consequences, and cross-player world 'echoes,' with real-time updates over WebSockets."
   demo: https://choicerolls.com/
   tags:
     - tag: Python
+    - tag: Flask
     - tag: OpenAI
-    - tag: LangChain
-    - tag: Vector Databases
+    - tag: Embeddings / Semantic Search
+    - tag: WebSockets
+    - tag: AWS S3
 
 - name: Legislative Databases
   descr: "Developed a 'Legislator Search' feature from public data sets, allowing users one easy access point for all their legislative information."
