@@ -116,6 +116,21 @@ Dark Neumorphism theme:
 - Cards use `box-shadow` for neumorphic depth, `border-radius: 2rem`
 - Skill colors: languages `#4a7bd9`, frameworks `#07c0ff`, tools `#7ad9c2`
 
+**Recurring gotcha: two-column card grids and box-sizing.** `.projects-wrapper`,
+`.playable-grid`, and similar `display: flex; flex-wrap: wrap` grids give children a
+percentage `width` (44/45/46% at the three breakpoints) under the default `content-box`
+model, meaning padding is added on top of that width. Two sibling grids only line up
+column-for-column if their cards have the **same horizontal padding** — vertical padding
+can differ freely, it doesn't affect column width. This has broken twice already
+(`.playable-item` shipped with `padding: 1.5rem` all around vs `.project`'s
+`padding: 0.5rem 1rem`): the mismatch first caused cards to wrap onto their own row
+instead of sitting side by side, and after a naive `box-sizing: border-box` fix, cards
+sat side by side but no longer aligned under the grid above them. The actual fix was
+matching horizontal padding (`1rem`) across grids, not changing the box model. Before
+adding a new card grid meant to align with an existing one, check horizontal padding
+matches; before "fixing" a wrapping/misalignment bug, verify computed box width and
+x-position with a real browser render, not just reading the SCSS.
+
 ---
 
 ## Content Updates
@@ -168,7 +183,9 @@ Choice Rolls is `phase: building` but labeled "beta".
 - Styles live under `/* Playable Section */` in `_sass/main.scss`: `.playable-grid`,
   `.playable-item`, `.playable-header`, `.playable-label`, `.playable-desc`,
   `.playable-cta`. The grid mirrors `.projects-wrapper` responsive behavior (stacked
-  on mobile, 44/45/46% two-up at each breakpoint).
+  on mobile, 44/45/46% two-up at each breakpoint). `.playable-item`'s horizontal padding
+  (`1rem`) is deliberately kept equal to `.project`'s so the two grids' columns align —
+  see the box-sizing gotcha under Design System before touching either one's padding.
 
 `assets/css/main.min.css` is a committed build artifact, so any SCSS change has to be
 compiled and committed alongside it (see the broken `npm run prod` note above).

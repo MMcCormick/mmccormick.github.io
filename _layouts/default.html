@@ -51,14 +51,14 @@
         {% include section-timeline.html %}
       </section>
     {% endif %}
-    {%if site.show_projects_card %}
-      <section class="card neumorphism-card-big">
-        {% include section-projects.html %}
-      </section>
-    {% endif %}
     {%if site.show_playable_card %}
       <section class="card neumorphism-card-big">
         {% include section-playable.html %}
+      </section>
+    {% endif %}
+    {%if site.show_projects_card %}
+      <section class="card neumorphism-card-big">
+        {% include section-projects.html %}
       </section>
     {% endif %}
     {%if site.show_contact_card %}
