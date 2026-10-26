@@ -1,4 +1,4 @@
-# CLAUDE.md — mmccormick.github.io
+# CLAUDE.md for mmccormick.github.io
 
 ## Project Overview
 
@@ -19,8 +19,8 @@ deferred until something gets traction.
 feature/branch  →  PR into main  →  PR main into production  →  live at mattcmccormick.com
 ```
 
-- **`production`** — deploys to GitHub Pages (mattcmccormick.com). Never commit directly.
-- **`main`** — integration branch. PRs go here first for review.
+- **`production`**: deploys to GitHub Pages (mattcmccormick.com). Never commit directly.
+- **`main`**: integration branch. PRs go here first for review.
 - Feature branches should be short-lived and named descriptively (e.g. `update-resume`, `fix-timeline-layout`).
 
 ### Git Rules
@@ -46,7 +46,7 @@ npm run dev
 
 The Gulp pipeline compiles SCSS → `assets/css/main.min.css`, concatenates JS → `assets/js/app.min.js`, and runs Jekyll with incremental builds + BrowserSync.
 
-**`npm run prod` is currently broken** — it calls `gulp build`, but `gulpfile.js` only
+**`npm run prod` is currently broken**: it calls `gulp build`, but `gulpfile.js` only
 registers a `default` task, so it exits with "Task never defined: build". `default` is
 watch + serve, so there is no one-shot build command. To regenerate the committed
 `assets/css/*.min.css` and `assets/js/*.min.js` artifacts today you have to run
@@ -79,7 +79,7 @@ _includes/
 _sass/main.scss          # All custom styles
 _js/app.js               # Main JS (particles, typing effect, AOS, skills)
 worker/
-  index.js               # Cloudflare Worker — AI chat backend
+  index.js               # Cloudflare Worker, AI chat backend
   wrangler.toml          # Worker deployment config
 ```
 
@@ -90,7 +90,7 @@ worker/
 The chat widget (`_includes/chat-widget.html`) is a floating panel that calls a Cloudflare Worker, which proxies to the Anthropic API (Claude Haiku) with a system prompt containing Matt's full bio and resume data.
 
 **To enable:** Set `chat_worker_url` in `_config.yml` to the deployed worker URL.
-**Widget renders only if `chat_worker_url` is set** — blank disables it silently.
+**Widget renders only if `chat_worker_url` is set**; blank disables it silently.
 
 ### Cloudflare Worker
 
@@ -120,7 +120,7 @@ Dark Neumorphism theme:
 `.playable-grid`, and similar `display: flex; flex-wrap: wrap` grids give children a
 percentage `width` (44/45/46% at the three breakpoints) under the default `content-box`
 model, meaning padding is added on top of that width. Two sibling grids only line up
-column-for-column if their cards have the **same horizontal padding** — vertical padding
+column-for-column if their cards have the **same horizontal padding**; vertical padding
 can differ freely, it doesn't affect column width. This has broken twice already
 (`.playable-item` shipped with `padding: 1.5rem` all around vs `.project`'s
 `padding: 0.5rem 1rem`): the mismatch first caused cards to wrap onto their own row
@@ -135,7 +135,7 @@ x-position with a real browser render, not just reading the SCSS.
 
 ## Content Updates
 
-All content is data-driven — edit the files in `_data/` rather than HTML:
+All content is data-driven: edit the files in `_data/` rather than HTML:
 - Resume/experience → `_data/resume.json`
 - Projects section → `_data/projects.yml`
 - Timeline → `_data/timeline.yml`
@@ -149,9 +149,9 @@ After updating `_data/resume.json` or other data files, also update the system p
 
 ## Playable Projects
 
-A key goal for this site is a "things you can try" section — honest alpha/beta labels,
+A key goal for this site is a "things you can try" section: honest alpha/beta labels,
 one-line description, direct link. Don't add a project until someone other than Matt
-can actually use it. Don't over-design it — a simple grid is fine.
+can actually use it. Don't over-design it. A simple grid is fine.
 
 ### "Things You Can Try" section
 Built, wired in, and **live** (`show_playable_card: true` in `_config.yml`).
@@ -184,18 +184,18 @@ Choice Rolls is `phase: building` but labeled "beta".
   `.playable-item`, `.playable-header`, `.playable-label`, `.playable-desc`,
   `.playable-cta`. The grid mirrors `.projects-wrapper` responsive behavior (stacked
   on mobile, 44/45/46% two-up at each breakpoint). `.playable-item`'s horizontal padding
-  (`1rem`) is deliberately kept equal to `.project`'s so the two grids' columns align —
+  (`1rem`) is deliberately kept equal to `.project`'s so the two grids' columns align;
   see the box-sizing gotcha under Design System before touching either one's padding.
 
 `assets/css/main.min.css` is a committed build artifact, so any SCSS change has to be
 compiled and committed alongside it (see the broken `npm run prod` note above).
 
 ### Already live / shareable
-- **Choice Rolls** (choicerolls.com) — AI text adventure with tabletop RPG mechanics.
+- **Choice Rolls** (choicerolls.com): AI text adventure with tabletop RPG mechanics.
   In `playable.yml`, label "beta."
-- **dm-assistant** (dm-assistant-psi.vercel.app) — AI-powered D&D reference card tool
+- **dm-assistant** (dm-assistant-psi.vercel.app): AI-powered D&D reference card tool
   (voice input, auto-surfaced cards). In `playable.yml`, label "alpha."
-- **remental-inc** — **not deployed**, and deploying it is not a one-liner. Confirmed
+- **remental-inc**: **not deployed**, and deploying it is not a one-liner. Confirmed
   2026-07-26: `has_pages: false`, `homepage: null`, zero deployments, repo private.
   Tracker has `Publish: yes` with an empty `Live:`, so the export rule correctly
   excludes it. Gotcha for whenever this is picked up: the actual game lives on the
@@ -203,20 +203,20 @@ compiled and committed alongside it (see the broken `npm run prod` note above).
   2025-06-24, so a stock Vercel connection would build the stale branch. `tynan` is a
   clean fast-forward from `main`, but whether it is the branch to ship is undecided.
   Not a priority: other projects are closer to live.
-- **collapse** — playable but not well-designed enough to drive traffic to yet.
-- **key-agent** / **key-hunter** — small shareable tools; lower priority but ready.
+- **collapse**: playable but not well-designed enough to drive traffic to yet.
+- **key-agent** / **key-hunter**: small shareable tools; lower priority but ready.
 
 ### Playable but not yet public
-- **job-ops** — email/job tracking tool, Core: yes. Deciding between product and OSS.
+- **job-ops**: email/job tracking tool, Core: yes. Deciding between product and OSS.
   Strong non-game candidate once direction is clearer.
-- **blades** — game, Core: yes. Polish pass needed.
-- **chat-hacker** — game, Core: yes, currently broken. Fix the blocker first.
+- **blades**: game, Core: yes. Polish pass needed.
+- **chat-hacker**: game, Core: yes, currently broken. Fix the blocker first.
 
 ### On the roadmap (not linkable yet)
-- **terminal-dancer** — cyberpunk dark net game. CLI-only; needs web port.
-- **simperium** — Roman life sim. Terminal-only for now, longer road to web.
+- **terminal-dancer**: cyberpunk dark net game. CLI-only; needs web port.
+- **simperium**: Roman life sim. Terminal-only for now, longer road to web.
 
 ### What not to do
 - Don't create a separate studio site until something has return visitors.
 - Don't add a project link until someone other than Matt can actually use it.
-- Don't rename or rebrand Choice Rolls on this site — it's established enough to keep as-is.
+- Don't rename or rebrand Choice Rolls on this site; it's established enough to keep as-is.
