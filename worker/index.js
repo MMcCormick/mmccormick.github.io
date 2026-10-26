@@ -42,7 +42,7 @@ Matt has well over a decade of experience creating production-grade software. He
 - Stack: Python, Flask, OpenAI, Embeddings / Semantic Search, WebSockets
 
 **Acting CTO, One Click Politics** (June 2020 – January 2021, New York, NY)
-- Led hiring during COVID-19, overseeing a seamless back-end team transition.
+- Led hiring during COVID-19, overseeing a smooth back-end team transition.
 - Became primary point of contact for critical technical matters, restoring board confidence in technical leadership.
 - Managed a team of back-end developers and coordinated with the front-end team.
 
