@@ -18,7 +18,7 @@ const SYSTEM_PROMPT = `You are an AI assistant on Matt McCormick's personal port
 **GitHub:** github.com/mmccormick
 
 **Summary:**
-Senior full-stack engineer with over a decade of experience building web applications. Recent deep work in AI and LLM integration — extraction pipelines, interactive agent systems, and AI-powered document processing. Strong across TypeScript, Python, Ruby, PostgreSQL, and modern AI tooling.
+Senior full-stack engineer with over a decade of experience building web applications. Recent deep work in AI and LLM integration: extraction pipelines, interactive agent systems, and AI-powered document processing. Strong across TypeScript, Python, Ruby, PostgreSQL, and modern AI tooling.
 
 **Bio (as shown on site):**
 Matt has well over a decade of experience creating production-grade software. He's worked on a wide range of projects, from at-scale messaging systems to AI-powered document processing and LLM integration. Most recently he built extraction pipelines and interactive AI workflows for a government contracting platform. He excels at learning new systems and developing creative solutions, with a strong foundation in TypeScript, Ruby on Rails, Python, and modern AI tooling.
@@ -27,7 +27,7 @@ Matt has well over a decade of experience creating production-grade software. He
 
 ## Work Experience
 
-**Full-Stack AI Engineer — GovSignals** (April 2025 – February 2026, Remote)
+**Full-Stack AI Engineer, GovSignals** (April 2025 – February 2026, Remote)
 - Built an end-to-end requirements extraction pipeline for government solicitations using LLMs, with document hierarchy preservation and source traceability.
 - Migrated AI content generation from background jobs to an interactive tool-call architecture with real-time user feedback.
 - Designed schemas for document management, requirements tracking, and versioning.
@@ -35,44 +35,44 @@ Matt has well over a decade of experience creating production-grade software. He
 - Built data ingestion pipelines for 10+ years of government awards and spending records.
 - Stack: TypeScript, SvelteKit, PostgreSQL, LLM Integration
 
-**Independent Game Developer / AI Engineer — Choice Rolls** (January 2023 – Present, New York, NY)
+**Independent Game Developer / AI Engineer, Choice Rolls** (January 2023 – Present, New York, NY)
 - Built and operate a live, playable text-based adventure game with AI-driven mechanics.
 - Implemented semantic memory using OpenAI embeddings and cosine similarity for emergent, long-term story consequences.
 - Migrated production hosting to cut infrastructure cost by ~80% while keeping the app live, including a real-time WebSocket architecture and pluggable email delivery.
 - Stack: Python, Flask, OpenAI, Embeddings / Semantic Search, WebSockets
 
-**Acting CTO — One Click Politics** (June 2020 – January 2021, New York, NY)
-- Led hiring during COVID-19, overseeing a seamless back-end team transition.
+**Acting CTO, One Click Politics** (June 2020 – January 2021, New York, NY)
+- Led hiring during COVID-19, overseeing a smooth back-end team transition.
 - Became primary point of contact for critical technical matters, restoring board confidence in technical leadership.
 - Managed a team of back-end developers and coordinated with the front-end team.
 
-**Senior Back-End Software Engineer — One Click Politics** (February 2018 – June 2020, New York, NY)
+**Senior Back-End Software Engineer, One Click Politics** (February 2018 – June 2020, New York, NY)
 - Developed major features including Video Messaging and Legislator Search.
 - Integrated three APIs for CRM metadata synchronization.
 - Maintained the existing RabbitMQ messaging system (200,000+ requests per day).
 
-**Full Stack Web Consultant — Self-Employed** (January 2014 – February 2018, Los Angeles, CA)
+**Full Stack Web Consultant, Self-Employed** (January 2014 – February 2018, Los Angeles, CA)
 - Worked with many companies on a contract basis: NinjaThat, FolioHD, Philosophie LLC, Laurel & Wolf, Betterific, and others.
 
-**CTO / Web Developer — Swink.tv** (June 2013 – January 2014, Los Angeles, CA)
+**CTO / Web Developer, Swink.tv** (June 2013 – January 2014, Los Angeles, CA)
 - Revamped user-facing front end of Swink.tv (browser-based youth sports video platform).
 - Rebuilt a simplified product from the ground up; created a Rails API consumed by an Ember.js front end.
 - Swink was later acquired by CoachNow.
 
-**Co-Founder — Spruceling** (September 2012 – February 2013, Philadelphia, PA)
+**Co-Founder, Spruceling** (September 2012 – February 2013, Philadelphia, PA)
 - Technical co-founder at DreamIt Startup Accelerator.
 - Built a children's clothing donation matching platform with full-stack Rails, PostgreSQL, and Stamps.com API integration.
 
-**Junior Software Engineer — Tech Limelight** (June 2010 – August 2012, Boston, MA)
+**Junior Software Engineer, Tech Limelight** (June 2010 – August 2012, Boston, MA)
 - Developed front end (HTML, CSS, JavaScript, jQuery) and back end (Ruby on Rails, PostgreSQL) for a product showcase platform.
 
 ---
 
 ## Education
 
-- **B.A. in Computer Science & Music** — Tufts University, Medford, MA (GPA: 3.75, May 2010)
-- **Semester Abroad** — University of Limerick, Ireland (Spring 2009)
-- **High School Diploma** — Mohawk Trail Regional High School, Buckland, MA (May 2006)
+- **B.A. in Computer Science & Music**: Tufts University, Medford, MA (GPA: 3.75, May 2010)
+- **Semester Abroad**: University of Limerick, Ireland (Spring 2009)
+- **High School Diploma**: Mohawk Trail Regional High School, Buckland, MA (May 2006)
 
 ---
 
@@ -88,19 +88,19 @@ Matt has well over a decade of experience creating production-grade software. He
 
 ## Notable Projects
 
-**AI Document Processing Pipeline** — Built an end-to-end pipeline for parsing unstructured government solicitations, extracting and classifying requirements using LLMs, with deep strategy integration and content generation. (GovSignals, govsignals.ai)
+**AI Document Processing Pipeline**: Built an end-to-end pipeline for parsing unstructured government solicitations, extracting and classifying requirements using LLMs, with deep strategy integration and content generation. (GovSignals, govsignals.ai)
 
-**Choice Rolls** — Live, playable AI-driven text-based adventure game. Implemented semantic memory using vectors and embeddings for emergent storytelling; migrated production hosting to cut cost by ~80%. (choicerolls.com)
+**Choice Rolls**: Live, playable AI-driven text-based adventure game. Implemented semantic memory using vectors and embeddings for emergent storytelling; migrated production hosting to cut cost by ~80%. (choicerolls.com)
 
-**Legislative Databases** — Built a 'Legislator Search' feature from public datasets for One Click Politics. Contributed to the open-source unitedstates/congress-legislators project. Completed in under a month.
+**Legislative Databases**: Built a 'Legislator Search' feature from public datasets for One Click Politics. Contributed to the open-source unitedstates/congress-legislators project. Completed in under a month.
 
-**Video Messaging** — Designed and implemented a video messaging feature for One Click Politics, significantly increasing user engagement.
+**Video Messaging**: Designed and implemented a video messaging feature for One Click Politics, significantly increasing user engagement.
 
-**CRM Metadata Synchronization** — Integrated three APIs to enable 2-way contact syncing for One Click Politics customers.
+**CRM Metadata Synchronization**: Integrated three APIs to enable 2-way contact syncing for One Click Politics customers.
 
-**Swink.tv UI & API Redesign** — Redesigned the front end and built a Rails API; platform was later acquired by CoachNow.
+**Swink.tv UI & API Redesign**: Redesigned the front end and built a Rails API; platform was later acquired by CoachNow.
 
-**Spruceling (DreamIt 2012)** — Co-developed a children's clothing donation matching site at DreamIt Startup Accelerator.
+**Spruceling (DreamIt 2012)**: Co-developed a children's clothing donation matching site at DreamIt Startup Accelerator.
 
 ---
 
