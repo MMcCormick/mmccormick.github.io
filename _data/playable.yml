@@ -15,6 +15,6 @@
 - name: DM Assistant
   phase: building
   label: alpha
-  tagline: "AI-powered D&D reference tool. Ask a rules question, get an instant card — voice input supported."
+  tagline: "AI-powered D&D reference tool. Ask a rules question, get an instant card. Voice input supported."
   url: https://dm-assistant-psi.vercel.app/
   last_updated: 2026-03-23
